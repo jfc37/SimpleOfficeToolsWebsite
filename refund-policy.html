@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Refund Policy — Simple Office Tools</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Refund Policy for Simple Office Tools.">
+    <style>
+        :root{
+            --text:#1f2937; --muted:#6b7280; --bg:#ffffff; --ink:#111827; --link:#296AF5; --border:#e5e7eb; --maxw:860px;
+        }
+        html,body{height:100%;}
+        body{
+            margin:0; color:var(--text); background:var(--bg);
+            font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,Helvetica,Arial,sans-serif;
+            -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+        }
+        .wrap{max-width:var(--maxw); margin:0 auto; padding:40px 20px 80px;}
+        header{margin-bottom:24px;}
+        h1{font-size:clamp(28px,4vw,36px); line-height:1.2; margin:0 0 8px; color:var(--ink);}
+        .meta{color:var(--muted); font-size:14px; margin-bottom:24px;}
+        h2{font-size:22px; line-height:1.35; margin:28px 0 10px; color:var(--ink);}
+        h3,h4,h5{color:var(--ink); margin:20px 0 8px;}
+        p{margin:10px 0;}
+        ul{margin:10px 0 10px 22px;}
+        li{margin:6px 0;}
+        a{color:var(--link); text-decoration:underline;}
+        .note{
+            background:#f9fafb; border:1px solid var(--border); border-radius:10px;
+            padding:12px 14px; color:#374151; font-size:14px; margin:18px 0 6px;
+        }
+        .hr{height:1px; background:var(--border); margin:24px 0;}
+        .toplinks{font-size:14px; color:var(--muted);}
+        .toplinks a{color:var(--link); text-decoration:underline;}
+        footer{margin-top:36px; font-size:13px; color:var(--muted);}
+        .section{scroll-margin-top:80px;}
+    </style>
+</head>
+<body>
+<main class="wrap" role="main">
+    <header>
+        <h1>Refund Policy</h1>
+        <div class="meta">Last updated: 10 September 2025</div>
+        <div class="toplinks">
+            Related: <a href="terms-and-conditions.html">Terms of Service</a> • <a href="privacy.html">Privacy Notice</a>
+        </div>
+        <div class="note">
+            We sell through <strong>Paddle</strong>, our merchant of record. Eligible refunds are issued via Paddle to the
+            original payment method. This policy works alongside Paddle’s buyer terms and applicable consumer laws.
+        </div>
+    </header>
+
+    <article>
+        <section id="scope" class="section">
+            <h2>1. Scope &amp; Merchant of Record</h2>
+            <p>This policy covers purchases of Simple Office Tools made through Paddle. For billing questions, please include your <strong>Paddle order number</strong> (<em>PO...</em> or <em>txn_...</em>).</p>
+        </section>
+
+        <section id="windows" class="section">
+            <h2>2. Money-Back Windows</h2>
+            <ul>
+                <li><strong>New purchases:</strong> If the app does not work as described for you, you may request a refund within <strong>14 days</strong> of purchase.</li>
+                <li><strong>Renewals:</strong> You may request a refund within <strong>7 days</strong> of renewal if you did not intend to renew or the app was not used after renewal (we may ask you to deactivate the licence).</li>
+            </ul>
+            <p><em>Prefer to troubleshoot?</em> Many issues can be resolved quickly—contact support and we’ll work with you.</p>
+        </section>
+
+        <section id="how-to" class="section">
+            <h2>3. How to Request a Refund</h2>
+            <p>Email <a href="mailto:support@yourdomain.com">support@yourdomain.com</a> with:</p>
+            <ul>
+                <li>Your <strong>Paddle order number</strong></li>
+                <li>Purchase email and date</li>
+                <li>A brief reason for the request (helps us improve)</li>
+            </ul>
+            <p>If eligible, we’ll initiate the refund via Paddle and confirm by email.</p>
+        </section>
+
+        <section id="exclusions" class="section">
+            <h2>4. Eligibility &amp; Non-Refundable Cases</h2>
+            <ul>
+                <li>Requests made outside the windows above (unless required by law)</li>
+                <li>Evidence of <strong>licence abuse</strong> or excessive seat transfers</li>
+                <li><strong>Volume/enterprise orders</strong> (e.g., &gt;20 seats) after delivery, unless your contract states otherwise</li>
+                <li><strong>Bank/FX fees</strong>, currency fluctuations, or charges not controlled by us</li>
+            </ul>
+        </section>
+
+        <section id="subscriptions" class="section">
+            <h2>5. Subscriptions &amp; Cancellations</h2>
+            <p>Cancelling stops <strong>future</strong> renewals. Unless stated otherwise, we do not provide pro-rated refunds for unused time after the applicable refund window.</p>
+        </section>
+
+        <section id="processing" class="section">
+            <h2>6. Refund Processing</h2>
+            <p>Approved refunds are sent back to the original payment method. Your bank or payment provider controls when funds appear (this can take several business days).</p>
+        </section>
+
+        <section id="rights" class="section">
+            <h2>7. Statutory Rights</h2>
+            <p>Nothing in this policy limits rights that cannot be excluded by law (e.g., New Zealand Consumer Guarantees Act; EU/UK consumer rights for digital content). Where such rights apply, we will honour them.</p>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>8. Contact</h2>
+            <p>Questions or refund requests: <a href="mailto:support@yourdomain.com">support@yourdomain.com</a>. Include your <strong>Paddle order number</strong> for faster processing.</p>
+        </section>
+
+        <div class="hr"></div>
+        <footer>
+            © <span id="year"></span> [Company legal name]. All rights reserved.
+        </footer>
+    </article>
+</main>
+
+<script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
