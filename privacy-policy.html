@@ -17,6 +17,9 @@
         }
         .wrap{max-width:var(--maxw); margin:0 auto; padding:40px 20px 80px;}
         header{margin-bottom:24px;}
+        .topnav{display:flex; gap:12px; align-items:center; margin-bottom:12px}
+        .topnav a{color:var(--link); text-decoration:none; font-weight:600}
+        .topnav a:hover{text-decoration:underline}
         h1{font-size:clamp(28px,4vw,36px); line-height:1.2; margin:0 0 8px; color:var(--ink);}
         .meta{color:var(--muted); font-size:14px; margin-bottom:24px;}
         h2{font-size:22px; line-height:1.35; margin:28px 0 10px; color:var(--ink);}
@@ -42,6 +45,9 @@
 <body>
 <main class="wrap" role="main">
     <header>
+        <nav class="topnav">
+            <a href="index.html">← Home</a>
+        </nav>
         <h1>Privacy Notice</h1>
         <div class="meta">Last updated: 10 September 2025</div>
         <div class="toplinks">
@@ -53,7 +59,7 @@
     <article>
         <section id="who-we-are" class="section">
             <h2>1. Who We Are</h2>
-            <p>[Company legal name], trading as <strong>Simple Office Tools</strong> (“we”, “us”). Address: [registered address]. Email: <a href="mailto:privacy@yourdomain.com">privacy@yourdomain.com</a>.</p>
+            <p><strong>Simple Office Tools</strong> (“we”, “us”). Email: <a href="mailto:joe@simpleofficetools.co.nz">joe@simpleofficetools.co.nz</a>.</p>
             <p><strong>Merchant of Record:</strong> Payments are processed by <strong>Paddle</strong> (Paddle.com), which acts as our merchant of record and processes purchases as an independent controller.</p>
         </section>
 
@@ -132,12 +138,12 @@
 
         <section id="contact" class="section">
             <h2>12. Contact</h2>
-            <p>Privacy questions: <a href="mailto:privacy@yourdomain.com">privacy@yourdomain.com</a>. For billing matters, include your <strong>Paddle order number</strong>.</p>
+            <p>Privacy questions: <a href="mailto:joe@simpleofficetools.co.nz">joe@simpleofficetools.co.nz</a>. For billing matters, include your <strong>Paddle order number</strong>.</p>
         </section>
 
         <div class="hr"></div>
         <footer>
-            © <span id="year"></span> [Company legal name]. All rights reserved.
+            © <span id="year"></span> Simple Office Tools. All rights reserved.
         </footer>
     </article>
 </main>

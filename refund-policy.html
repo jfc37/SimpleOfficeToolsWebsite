@@ -17,6 +17,9 @@
         }
         .wrap{max-width:var(--maxw); margin:0 auto; padding:40px 20px 80px;}
         header{margin-bottom:24px;}
+        .topnav{display:flex; gap:12px; align-items:center; margin-bottom:12px}
+        .topnav a{color:var(--link); text-decoration:none; font-weight:600}
+        .topnav a:hover{text-decoration:underline}
         h1{font-size:clamp(28px,4vw,36px); line-height:1.2; margin:0 0 8px; color:var(--ink);}
         .meta{color:var(--muted); font-size:14px; margin-bottom:24px;}
         h2{font-size:22px; line-height:1.35; margin:28px 0 10px; color:var(--ink);}
@@ -39,6 +42,9 @@
 <body>
 <main class="wrap" role="main">
     <header>
+        <nav class="topnav">
+            <a href="index.html">← Home</a>
+        </nav>
         <h1>Refund Policy</h1>
         <div class="meta">Last updated: 10 September 2025</div>
         <div class="toplinks">
@@ -103,12 +109,12 @@
 
         <section id="contact" class="section">
             <h2>8. Contact</h2>
-            <p>Questions or refund requests: <a href="mailto:support@yourdomain.com">support@yourdomain.com</a>. Include your <strong>Paddle order number</strong> for faster processing.</p>
+            <p>Questions or refund requests: <a href="mailto:joe@simpleofficetools.co.nz">joe@simpleofficetools.co.nz</a>. Include your <strong>Paddle order number</strong> for faster processing.</p>
         </section>
 
         <div class="hr"></div>
         <footer>
-            © <span id="year"></span> [Company legal name]. All rights reserved.
+            © <span id="year"></span> Simple Office Tools. All rights reserved.
         </footer>
     </article>
 </main>

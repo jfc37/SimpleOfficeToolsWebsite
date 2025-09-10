@@ -7,44 +7,48 @@
     <meta name="description" content="Terms of Service for Simple Office Tools.">
     <style>
         :root{
-            --text:#1f2937; --muted:#6b7280; --bg:#ffffff; --ink:#111827; --link:#296AF5; --border:#e5e7eb; --maxw:860px;
+            --text:#1f2937; --muted:#6b7280; --bg:#ffffff; --ink:#111827;
+            --link:#296AF5; --border:#e5e7eb; --maxw:860px; --chip:#f3f4f6;
         }
-        html,body{height:100%;}
+        html,body{height:100%}
         body{
             margin:0; color:var(--text); background:var(--bg);
-            font: 16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,Helvetica,Arial,sans-serif;
+            font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,Helvetica,Arial,sans-serif;
             -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
         }
-        .wrap{max-width:var(--maxw); margin:0 auto; padding:40px 20px 80px;}
-        header{margin-bottom:24px;}
-        h1{font-size:clamp(28px,4vw,36px); line-height:1.2; margin:0 0 8px; color:var(--ink);}
-        .meta{color:var(--muted); font-size:14px; margin-bottom:24px;}
-        h2{font-size:22px; line-height:1.35; margin:28px 0 10px; color:var(--ink);}
-        h3,h4,h5{color:var(--ink); margin:20px 0 8px;}
-        p{margin:10px 0;}
-        ul{margin:10px 0 10px 22px;}
-        li{margin:6px 0;}
-        a{color:var(--link); text-decoration:underline;}
-        .note{
-            background:#f9fafb; border:1px solid var(--border); border-radius:10px;
-            padding:12px 14px; color:#374151; font-size:14px; margin:18px 0 6px;
-        }
-        .hr{height:1px; background:var(--border); margin:24px 0;}
-        .toplinks{font-size:14px; color:var(--muted);}
-        .toplinks a{color:var(--link); text-decoration:underline;}
-        footer{margin-top:36px; font-size:13px; color:var(--muted);}
-        .section{scroll-margin-top:80px;}
+        .wrap{max-width:var(--maxw); margin:0 auto; padding:40px 20px 80px}
+        header{margin-bottom:24px}
+        .topnav{display:flex; gap:12px; align-items:center; margin-bottom:12px}
+        .topnav a{color:var(--link); text-decoration:none; font-weight:600}
+        .topnav a:hover{text-decoration:underline}
+        h1{font-size:clamp(28px,4vw,36px); line-height:1.2; margin:0 0 8px; color:var(--ink)}
+        .meta{color:var(--muted); font-size:14px; margin-bottom:18px}
+        .toplinks{font-size:14px; color:var(--muted); margin-bottom:8px}
+        .toplinks a{color:var(--link); text-decoration:underline}
+        h2{font-size:22px; line-height:1.35; margin:28px 0 10px; color:var(--ink)}
+        h3,h4{color:var(--ink); margin:20px 0 8px}
+        p{margin:10px 0}
+        ul{margin:10px 0 10px 22px}
+        li{margin:6px 0}
+        a{color:var(--link); text-decoration:underline}
+        .note{background:#f9fafb; border:1px solid var(--border); border-radius:10px; padding:12px 14px; color:#374151; font-size:14px; margin:18px 0 6px}
+        .hr{height:1px; background:var(--border); margin:24px 0}
+        .section{scroll-margin-top:80px}
+        footer{margin-top:36px; font-size:13px; color:var(--muted)}
+        code.kbd{background:var(--chip); border:1px solid var(--border); padding:2px 6px; border-radius:6px; font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; font-size:13px}
     </style>
 </head>
 <body>
 <main class="wrap" role="main">
     <header>
+        <nav class="topnav">
+            <a href="index.html">← Home</a>
+        </nav>
         <h1>Terms of Service</h1>
         <div class="meta">Last updated: 10 September 2025</div>
         <div class="toplinks">
-            Related: <a href="privacy.html">Privacy Notice</a> • <a href="refund-policy.html">Refund Policy</a>
+            Related: <a href="privacy-policy.html">Privacy Notice</a> • <a href="refund-policy.html">Refund Policy</a>
         </div>
-        <div class="note">This page is a starting point and not legal advice. Please tailor it for your business and get legal review.</div>
     </header>
 
     <article>
@@ -55,7 +59,7 @@
 
         <section id="who-we-are" class="section">
             <h2>2. Who We Are &amp; Contact</h2>
-            <p>[Company legal name], trading as <strong>Simple Office Tools</strong>. Contact: <a href="mailto:support@yourdomain.com">support@yourdomain.com</a>.</p>
+            <p><strong>Simple Office Tools</strong>. Contact: <a href="mailto:joe@simpleofficetools.co.nz">joe@simpleofficetools.co.nz</a>.</p>
             <p><strong>Merchant of Record:</strong> Payments are processed by <strong>Paddle</strong> (Paddle.com), which handles billing, invoicing, taxes, and buyer support.</p>
         </section>
 
@@ -67,7 +71,7 @@
         <section id="licence" class="section">
             <h2>4. Licence &amp; Activation</h2>
             <p><strong>Grant.</strong> We grant you a non-exclusive, non-transferable licence to install and use the App in accordance with these Terms and your selected plan.</p>
-            <p><strong>Per-seat licensing.</strong> Each paid seat authorises use on <strong>one device</strong> at a time. Seat transfers are permitted (e.g., when replacing a machine); we may limit transfers to prevent abuse (e.g., up to <strong>2 transfers per 12 months</strong>).</p>
+            <p><strong>Per-seat licensing.</strong> Each paid seat authorises use on <strong>one device</strong> at a time. Seat transfers are permitted (e.g., when replacing a machine); we may limit transfers to prevent abuse.</p>
             <p><strong>Trial.</strong> We may offer a <strong>30-day</strong> free trial. Trial features may be limited and may stop working at the end of the trial unless a paid licence is activated.</p>
             <p><strong>Activation &amp; verification.</strong> The App may verify licence status online and record device identifiers (e.g., a hashed machine ID) to manage seats and prevent fraud.</p>
         </section>
@@ -105,4 +109,59 @@
             <p>We may update the App to improve performance, security, or add/remove features. We may modify these Terms by posting an updated version. Material changes will be notified; continued use after changes means you accept the new Terms.</p>
         </section>
 
+        <section id="analytics" class="section">
+            <h2>11. Analytics &amp; Interaction Logs (No PDF Content)</h2>
+            <p><strong>What we collect.</strong> We may record non-content telemetry such as feature usage counts, button clicks, error traces/crash reports, app version, OS, anonymised or hashed device ID, timestamps, and basic network events (e.g., licence checks, checkout status). We do <strong>not</strong> collect or upload your PDF files or their contents.</p>
+            <p><strong>Purpose.</strong> To operate, secure, and improve the App, diagnose issues, and understand feature adoption.</p>
+            <p><strong>Control.</strong> To opt out of optional diagnostics/analytics, email
+                <a href="mailto:joe@simpleofficetools.co.nz">joe@simpleofficetools.co.nz</a>
+                with your account email, company, and licence ID. We’ll confirm once disabled.
+                <strong>Essential operational logs</strong> (e.g., licence verification and security) may continue as necessary to provide the Service.
+                Where required by law, diagnostics are collected only with your consent, which you can withdraw at any time via the same email.</p>
+
+            <p><strong>Retention.</strong> Interaction logs are typically retained for up to <strong>90 days</strong> unless a longer period is required for security, fraud prevention, or legal obligations. See our <a href="privacy-policy.html">Privacy Notice</a> for details.</p>
+        </section>
+
         <section id="privacy" class="section">
+            <h2>12. Privacy</h2>
+            <p>Your personal information is handled as described in our <a href="privacy-policy.html">Privacy Notice</a>, which forms part of these Terms.</p>
+        </section>
+
+        <section id="warranty" class="section">
+            <h2>13. Warranties &amp; Disclaimers</h2>
+            <p>The App is provided “as is” and “as available” without warranties of any kind, to the maximum extent permitted by law.</p>
+        </section>
+
+        <section id="liability" class="section">
+            <h2>14. Limitation of Liability</h2>
+            <p>To the maximum extent permitted by law, Simple Office Tools and its suppliers will not be liable for indirect, incidental, special, consequential, or punitive damages, or any loss of profits or data. Our total liability for any claim relating to the Service is limited to the amounts you paid for the Service in the 12 months preceding the claim.</p>
+        </section>
+
+        <section id="indemnity" class="section">
+            <h2>15. Indemnity</h2>
+            <p>You agree to indemnify us against claims arising from your misuse of the App or violation of these Terms.</p>
+        </section>
+
+        <section id="termination" class="section">
+            <h2>16. Suspension &amp; Termination</h2>
+            <p>We may suspend or terminate access for breach of these Terms, fraud, non-payment, or legal reasons. You may stop using the App at any time.</p>
+        </section>
+
+        <section id="law" class="section">
+            <h2>17. Governing Law</h2>
+            <p>These Terms are governed by the laws of New Zealand, without regard to conflict-of-laws rules. Disputes will be subject to the exclusive jurisdiction of the courts of New Zealand.</p>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>18. Contact</h2>
+            <p>Questions about these Terms? Email <a href="mailto:joe@simpleofficetools.co.nz">joe@simpleofficetools.co.nz</a>.</p>
+        </section>
+
+        <div class="hr"></div>
+    </article>
+
+    <footer>© <span id="y"></span> Simple Office Tools</footer>
+</main>
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>

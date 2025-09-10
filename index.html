@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en-US">
+
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta http-equiv="x-ua-compatible" content="IE=edge">
     <meta name="author" content="SemiColonWeb">
-    <meta name="description" content="Simple Office Tools — PDF: Merge, split, reorder, rotate, convert, and compress PDFs with a fast, friendly toolkit. Try it free.">
+    <meta name="description"
+        content="Simple Office Tools — PDF: Merge, split, reorder, rotate, convert, and compress PDFs with a fast, friendly toolkit. Try it free.">
 
     <!-- Font Imports -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Montserrat:wght@400;700&family=Merriweather&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Montserrat:wght@400;700&family=Merriweather&display=swap"
+        rel="stylesheet">
 
     <!-- Core Style -->
     <link rel="stylesheet" href="style.css">
@@ -34,901 +38,539 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Simple Office Tools - PDF</title>
-    <style>html,body{height:100%;}</style>
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+    </style>
 </head>
 
 <body class="stretched">
 
-<div id="wrapper">
+    <div id="wrapper">
 
-    <!-- Header -->
-    <header id="header" class="transparent-header dark" data-sticky-class="not-dark" data-responsive-class="not-dark" data-sticky-logo-height="80" data-sticky-menu-padding="29">
-        <div id="header-wrap">
-            <div class="container">
-                <div class="header-row justify-content-lg-between">
+        <!-- Header -->
+        <header id="header" class="transparent-header dark" data-sticky-class="not-dark"
+            data-responsive-class="not-dark" data-sticky-logo-height="80" data-sticky-menu-padding="29">
+            <div id="header-wrap">
+                <div class="container">
+                    <div class="header-row justify-content-lg-between">
 
-                    <!-- Logo -->
-                    <div id="logo" class="col-auto order-lg-2 me-lg-0 px-0">
-                        <a href="demo-app-landing.html">
-                            <img class="logo-default" srcset="demos/app-landing/images/appicon.png" src="demos/app-landing/images/logo@2x.png" alt="Canvas Logo">
-                            <img class="logo-dark" srcset="demos/app-landing/images/logo-dark.png, demos/app-landing/images/logo-dark@2x.png 2x" src="demos/app-landing/images/logo-dark@2x.png" alt="Canvas Logo">
-                        </a>
-                    </div><!-- #logo end -->
+                        <!-- Logo -->
+                        <div id="logo" class="col-auto order-lg-2 me-lg-0 px-0">
+                            <a href="#">
+                                <img class="logo-default" srcset="demos/app-landing/images/appicon.png"
+                                    src="demos/app-landing/images/logo@2x.png" alt="Simple Office Tools Logo">
+                                <img class="logo-dark"
+                                    srcset="demos/app-landing/images/logo-dark.png, demos/app-landing/images/logo-dark@2x.png 2x"
+                                    src="demos/app-landing/images/logo-dark@2x.png" alt="Simple Office Tools Logo">
+                            </a>
+                        </div><!-- #logo end -->
 
-                    <div class="primary-menu-trigger">
-                        <button class="cnvs-hamburger" type="button" title="Open Mobile Menu">
-                            <span class="cnvs-hamburger-box"><span class="cnvs-hamburger-inner"></span></span>
-                        </button>
+                        <div class="primary-menu-trigger">
+                            <button class="cnvs-hamburger" type="button" title="Open Mobile Menu">
+                                <span class="cnvs-hamburger-box"><span class="cnvs-hamburger-inner"></span></span>
+                            </button>
+                        </div>
+
+                        <!-- Primary Navigation -->
+                        <nav class="primary-menu with-arrows col-lg-5 order-lg-1 px-0">
+                            <ul class="menu-container one-page-menu" data-easing="easeInOutExpo" data-speed="1250"
+                                data-offset="160">
+                                <li class="menu-item"><a class="menu-link" href="#" data-href="#slider">
+                                        <div>Home</div>
+                                    </a></li>
+                                <li class="menu-item"><a class="menu-link" href="#" data-href="#section-features">
+                                        <div>Features</div>
+                                    </a></li>
+                                <li class="menu-item"><a class="menu-link" href="#" data-href="#section-pricing">
+                                        <div>Pricing</div>
+                                    </a></li>
+                            </ul>
+                        </nav>
+
+                        <nav class="primary-menu col-lg-5 order-lg-3 px-0">
+                        </nav><!-- #primary-menu end -->
+
                     </div>
-
-                    <!-- Primary Navigation -->
-                    <nav class="primary-menu with-arrows col-lg-5 order-lg-1 px-0">
-                        <ul class="menu-container one-page-menu" data-easing="easeInOutExpo" data-speed="1250" data-offset="160">
-                            <li class="menu-item"><a class="menu-link" href="#" data-href="#slider"><div>Home</div></a></li>
-                            <li class="menu-item"><a class="menu-link" href="#" data-href="#section-features"><div>Features</div></a></li>
-                            <li class="menu-item"><a class="menu-link" href="#" data-href="#section-pricing"><div>Pricing</div></a></li>
-                        </ul>
-                    </nav>
-
-                    <nav class="primary-menu col-lg-5 order-lg-3 px-0">
-                    </nav><!-- #primary-menu end -->
-
                 </div>
             </div>
-        </div>
-        <div class="header-wrap-clone"></div>
-    </header><!-- #header end -->
+            <div class="header-wrap-clone"></div>
+        </header><!-- #header end -->
 
-    <!-- REPLACED HERO: Parallax Revolution Slider -->
-    <section id="slider" class="slider-element revslider-wrap include-header">
-        <div id="rev_slider_6_1_wrapper" class="rev_slider_wrapper fullscreen-container" data-alias="inspiration-header" style="background-color:transparent;padding:0;">
-            <div id="rev_slider_6_1" class="rev_slider fullscreenbanner" style="display:none;" data-version="5.2.6">
-                <ul>
-                    <li data-index="rs-18" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="500" data-rotate="0" data-saveperformance="off" data-title="Slide">
-                        <!-- MAIN IMAGE -->
-                        <img src="include/rs-plugin/demos/assets/images/transparent.png" style="background-color:#f9f9f9" alt="Image" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+        <!-- REPLACED HERO: Parallax Revolution Slider -->
+        <section id="slider" class="slider-element revslider-wrap include-header">
+            <div id="rev_slider_6_1_wrapper" class="rev_slider_wrapper fullscreen-container"
+                data-alias="inspiration-header" style="background-color:transparent;padding:0;">
+                <div id="rev_slider_6_1" class="rev_slider fullscreenbanner" style="display:none;" data-version="5.2.6">
+                    <ul>
+                        <li data-index="rs-18" data-transition="fade" data-slotamount="default" data-hideafterloop="0"
+                            data-hideslideonmobile="off" data-easein="default" data-easeout="default"
+                            data-masterspeed="500" data-rotate="0" data-saveperformance="off" data-title="Slide">
+                            <!-- MAIN IMAGE -->
+                            <img src="include/rs-plugin/demos/assets/images/transparent.png"
+                                style="background-color:#f9f9f9" alt="Image" data-bgposition="center center"
+                                data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
 
-                        <!-- LAYERS (same as original "Be Inspired" demo) -->
-                        <div class="tp-caption tp-resizeme rs-parallaxlevel-8" id="slide-18-layer-4"
-                             data-x="['left','left','left','left']" data-hoffset="['-264','-264','-371','-416']"
-                             data-y="['top','top','top','top']" data-voffset="['-135','-135','-180','-203']"
-                             data-transform_idle="o:1;"
-                             data-transform_in="x:left;rZ:-90deg;s:2500;e:Power4.easeOut;"
-                             data-transform_out="opacity:0;s:300;" data-start="500" data-basealign="slide" data-responsive_offset="on"
-                             style="z-index:5;">
-                            <img src="include/rs-plugin/demos/assets/images/header_penpot.png" alt="Image" data-ww="['650px','650px','650px','650px']" data-hh="['500px','500px','500px','500px']" data-no-retina>
-                        </div>
+                            <!-- LAYERS (same as original "Be Inspired" demo) -->
+                            <div class="tp-caption tp-resizeme rs-parallaxlevel-8" id="slide-18-layer-4"
+                                data-x="['left','left','left','left']" data-hoffset="['-264','-264','-371','-416']"
+                                data-y="['top','top','top','top']" data-voffset="['-135','-135','-180','-203']"
+                                data-transform_idle="o:1;" data-transform_in="x:left;rZ:-90deg;s:2500;e:Power4.easeOut;"
+                                data-transform_out="opacity:0;s:300;" data-start="500" data-basealign="slide"
+                                data-responsive_offset="on" style="z-index:5;">
+                                <img src="include/rs-plugin/demos/assets/images/header_penpot.png" alt="Image"
+                                    data-ww="['650px','650px','650px','650px']"
+                                    data-hh="['500px','500px','500px','500px']" data-no-retina>
+                            </div>
 
-                        <div class="tp-caption tp-resizeme rs-parallaxlevel-9" id="slide-18-layer-5"
-                             data-x="['right','right','right','right']" data-hoffset="['30','30','-70','-144']"
-                             data-y="['top','top','top','top']" data-voffset="['-204','-204','-233','-261']"
-                             data-transform_idle="o:1;"
-                             data-transform_in="x:right;y:-500px;rZ:90deg;s:2500;e:Power4.easeOut;"
-                             data-transform_out="opacity:0;s:300;" data-start="500" data-basealign="slide" data-responsive_offset="on"
-                             style="z-index:6;">
-                            <img src="include/rs-plugin/demos/assets/images/header_flowerpot.png" alt="Image" data-ww="['700px','700px','700px','700px']" data-hh="['600px','600px','600px','600px']" data-no-retina>
-                        </div>
+                            <div class="tp-caption tp-resizeme rs-parallaxlevel-9" id="slide-18-layer-5"
+                                data-x="['right','right','right','right']" data-hoffset="['30','30','-70','-144']"
+                                data-y="['top','top','top','top']" data-voffset="['-204','-204','-233','-261']"
+                                data-transform_idle="o:1;"
+                                data-transform_in="x:right;y:-500px;rZ:90deg;s:2500;e:Power4.easeOut;"
+                                data-transform_out="opacity:0;s:300;" data-start="500" data-basealign="slide"
+                                data-responsive_offset="on" style="z-index:6;">
+                                <img src="include/rs-plugin/demos/assets/images/header_flowerpot.png" alt="Image"
+                                    data-ww="['700px','700px','700px','700px']"
+                                    data-hh="['600px','600px','600px','600px']" data-no-retina>
+                            </div>
 
-                        <div class="tp-caption tp-resizeme rs-parallaxlevel-10" id="slide-18-layer-6"
-                             data-x="['left','left','left','left']" data-hoffset="['-372','-372','-540','-638']"
-                             data-y="['bottom','bottom','bottom','bottom']" data-voffset="['-484','-484','-520','-522']"
-                             data-transform_idle="o:1;"
-                             data-transform_in="x:left;rZ:45deg;s:2500;e:Power4.easeOut;"
-                             data-transform_out="opacity:0;s:300;" data-start="650" data-basealign="slide" data-responsive_offset="on"
-                             style="z-index:7;">
-                            <img src="include/rs-plugin/demos/assets/images/header_papers.png" alt="Image" data-ww="['900px','900px','900px','900px']" data-hh="['1000px','1000px','1000px','1000px']" data-no-retina>
-                        </div>
+                            <div class="tp-caption tp-resizeme rs-parallaxlevel-10" id="slide-18-layer-6"
+                                data-x="['left','left','left','left']" data-hoffset="['-372','-372','-540','-638']"
+                                data-y="['bottom','bottom','bottom','bottom']"
+                                data-voffset="['-484','-484','-520','-522']" data-transform_idle="o:1;"
+                                data-transform_in="x:left;rZ:45deg;s:2500;e:Power4.easeOut;"
+                                data-transform_out="opacity:0;s:300;" data-start="650" data-basealign="slide"
+                                data-responsive_offset="on" style="z-index:7;">
+                                <img src="include/rs-plugin/demos/assets/images/header_papers.png" alt="Image"
+                                    data-ww="['900px','900px','900px','900px']"
+                                    data-hh="['1000px','1000px','1000px','1000px']" data-no-retina>
+                            </div>
 
-                        <div class="tp-caption tp-resizeme rs-parallaxlevel-12" id="slide-18-layer-9"
-                             data-x="['left','left','left','left']" data-hoffset="['134','134','-2','-57']"
-                             data-y="['bottom','bottom','bottom','bottom']" data-voffset="['67','67','50','6']"
-                             data-transform_idle="o:1;"
-                             data-transform_in="y:bottom;rZ:90deg;s:1500;e:Power4.easeOut;"
-                             data-transform_out="opacity:0;s:300;" data-start="1050" data-basealign="slide" data-responsive_offset="on"
-                             style="z-index:8;">
-                            <img src="include/rs-plugin/demos/assets/images/header_marker.png" alt="Image" data-ww="['200px','200px','200px','200px']" data-hh="['300px','300px','300px','300px']" data-no-retina>
-                        </div>
+                            <div class="tp-caption tp-resizeme rs-parallaxlevel-12" id="slide-18-layer-9"
+                                data-x="['left','left','left','left']" data-hoffset="['134','134','-2','-57']"
+                                data-y="['bottom','bottom','bottom','bottom']" data-voffset="['67','67','50','6']"
+                                data-transform_idle="o:1;"
+                                data-transform_in="y:bottom;rZ:90deg;s:1500;e:Power4.easeOut;"
+                                data-transform_out="opacity:0;s:300;" data-start="1050" data-basealign="slide"
+                                data-responsive_offset="on" style="z-index:8;">
+                                <img src="include/rs-plugin/demos/assets/images/header_marker.png" alt="Image"
+                                    data-ww="['200px','200px','200px','200px']"
+                                    data-hh="['300px','300px','300px','300px']" data-no-retina>
+                            </div>
 
-                        <div class="tp-caption tp-resizeme rs-parallaxlevel-11" id="slide-18-layer-10"
-                             data-x="['left','left','left','left']" data-hoffset="['181','181','30','-39']"
-                             data-y="['bottom','bottom','bottom','bottom']" data-voffset="['-170','-170','-190','-212']"
-                             data-transform_idle="o:1;"
-                             data-transform_in="y:bottom;rZ:-90deg;s:1500;e:Power4.easeOut;"
-                             data-transform_out="opacity:0;s:300;" data-start="1250" data-basealign="slide" data-responsive_offset="on"
-                             style="z-index:9;">
-                            <img src="include/rs-plugin/demos/assets/images/header_edding.png" alt="Image" data-ww="['300px','300px','300px','300px']" data-hh="['400px','400px','400px','400px']" data-no-retina>
-                        </div>
+                            <div class="tp-caption tp-resizeme rs-parallaxlevel-11" id="slide-18-layer-10"
+                                data-x="['left','left','left','left']" data-hoffset="['181','181','30','-39']"
+                                data-y="['bottom','bottom','bottom','bottom']"
+                                data-voffset="['-170','-170','-190','-212']" data-transform_idle="o:1;"
+                                data-transform_in="y:bottom;rZ:-90deg;s:1500;e:Power4.easeOut;"
+                                data-transform_out="opacity:0;s:300;" data-start="1250" data-basealign="slide"
+                                data-responsive_offset="on" style="z-index:9;">
+                                <img src="include/rs-plugin/demos/assets/images/header_edding.png" alt="Image"
+                                    data-ww="['300px','300px','300px','300px']"
+                                    data-hh="['400px','400px','400px','400px']" data-no-retina>
+                            </div>
 
-                        <div class="tp-caption tp-resizeme rs-parallaxlevel-12" id="slide-18-layer-11"
-                             data-x="['left','left','left','left']" data-hoffset="['393','393','201','81']"
-                             data-y="['bottom','bottom','bottom','bottom']" data-voffset="['218','218','183','191']"
-                             data-transform_idle="o:1;"
-                             data-transform_in="y:bottom;rZ:-90deg;s:1500;e:Power4.easeOut;"
-                             data-transform_out="opacity:0;s:300;" data-start="500" data-basealign="slide" data-responsive_offset="on"
-                             style="z-index:10;">
-                            <img src="include/rs-plugin/demos/assets/images/header_paperclip.png" alt="Image" data-ww="['50px','50px','50px','50px']" data-hh="['100px','100px','100px','100px']" data-no-retina>
-                        </div>
+                            <div class="tp-caption tp-resizeme rs-parallaxlevel-12" id="slide-18-layer-11"
+                                data-x="['left','left','left','left']" data-hoffset="['393','393','201','81']"
+                                data-y="['bottom','bottom','bottom','bottom']" data-voffset="['218','218','183','191']"
+                                data-transform_idle="o:1;"
+                                data-transform_in="y:bottom;rZ:-90deg;s:1500;e:Power4.easeOut;"
+                                data-transform_out="opacity:0;s:300;" data-start="500" data-basealign="slide"
+                                data-responsive_offset="on" style="z-index:10;">
+                                <img src="include/rs-plugin/demos/assets/images/header_paperclip.png" alt="Image"
+                                    data-ww="['50px','50px','50px','50px']" data-hh="['100px','100px','100px','100px']"
+                                    data-no-retina>
+                            </div>
 
-                        <div class="tp-caption tp-resizeme rs-parallaxlevel-11" id="slide-18-layer-12"
-                             data-x="['left','left','left','left']" data-hoffset="['346','346','165','36']"
-                             data-y="['bottom','bottom','bottom','bottom']" data-voffset="['255','255','237','231']"
-                             data-transform_idle="o:1;rZ:310;"
-                             data-transform_in="y:bottom;rZ:90deg;s:2000;e:Power4.easeOut;"
-                             data-transform_out="opacity:0;s:300;" data-start="550" data-basealign="slide" data-responsive_offset="on"
-                             style="z-index:11;">
-                            <img src="include/rs-plugin/demos/assets/images/header_paperclip.png" alt="Image" data-ww="['50px','50px','50px','50px']" data-hh="['100px','100px','100px','100px']" data-no-retina>
-                        </div>
+                            <div class="tp-caption tp-resizeme rs-parallaxlevel-11" id="slide-18-layer-12"
+                                data-x="['left','left','left','left']" data-hoffset="['346','346','165','36']"
+                                data-y="['bottom','bottom','bottom','bottom']" data-voffset="['255','255','237','231']"
+                                data-transform_idle="o:1;rZ:310;"
+                                data-transform_in="y:bottom;rZ:90deg;s:2000;e:Power4.easeOut;"
+                                data-transform_out="opacity:0;s:300;" data-start="550" data-basealign="slide"
+                                data-responsive_offset="on" style="z-index:11;">
+                                <img src="include/rs-plugin/demos/assets/images/header_paperclip.png" alt="Image"
+                                    data-ww="['50px','50px','50px','50px']" data-hh="['100px','100px','100px','100px']"
+                                    data-no-retina>
+                            </div>
 
-                        <div class="tp-caption tp-resizeme rs-parallaxlevel-9" id="slide-18-layer-7"
-                             data-x="['right','right','right','right']" data-hoffset="['-364','-364','-479','-553']"
-                             data-y="['bottom','bottom','bottom','bottom']" data-voffset="['-155','-155','-180','-202']"
-                             data-transform_idle="o:1;"
-                             data-transform_in="x:right;rZ:-65deg;s:1500;e:Power4.easeOut;"
-                             data-transform_out="opacity:0;s:300;" data-start="700" data-basealign="slide" data-responsive_offset="on"
-                             style="z-index:12;">
-                            <img src="include/rs-plugin/demos/assets/images/header_tablet.png" alt="Image" data-ww="['730px','730px','730px','730px']" data-hh="['520px','520px','520px','520px']" data-no-retina>
-                        </div>
+                            <div class="tp-caption tp-resizeme rs-parallaxlevel-9" id="slide-18-layer-7"
+                                data-x="['right','right','right','right']" data-hoffset="['-364','-364','-479','-553']"
+                                data-y="['bottom','bottom','bottom','bottom']"
+                                data-voffset="['-155','-155','-180','-202']" data-transform_idle="o:1;"
+                                data-transform_in="x:right;rZ:-65deg;s:1500;e:Power4.easeOut;"
+                                data-transform_out="opacity:0;s:300;" data-start="700" data-basealign="slide"
+                                data-responsive_offset="on" style="z-index:12;">
+                                <img src="include/rs-plugin/demos/assets/images/header_tablet.png" alt="Image"
+                                    data-ww="['730px','730px','730px','730px']"
+                                    data-hh="['520px','520px','520px','520px']" data-no-retina>
+                            </div>
 
-                        <div class="tp-caption tp-resizeme rs-parallaxlevel-11" id="slide-18-layer-8"
-                             data-x="['right','right','right','right']" data-hoffset="['222','222','105','8']"
-                             data-y="['bottom','bottom','bottom','bottom']" data-voffset="['8','8','-17','-10']"
-                             data-transform_idle="o:1;"
-                             data-transform_in="x:right;rZ:90deg;s:1500;e:Power4.easeOut;"
-                             data-transform_out="opacity:0;s:300;" data-start="500" data-basealign="slide" data-responsive_offset="on"
-                             style="z-index:13;">
-                            <img src="include/rs-plugin/demos/assets/images/header_pen.png" alt="Image" data-ww="['300px','300px','300px','300px']" data-hh="['500px','500px','500px','500px']" data-no-retina>
-                        </div>
+                            <div class="tp-caption tp-resizeme rs-parallaxlevel-11" id="slide-18-layer-8"
+                                data-x="['right','right','right','right']" data-hoffset="['222','222','105','8']"
+                                data-y="['bottom','bottom','bottom','bottom']" data-voffset="['8','8','-17','-10']"
+                                data-transform_idle="o:1;" data-transform_in="x:right;rZ:90deg;s:1500;e:Power4.easeOut;"
+                                data-transform_out="opacity:0;s:300;" data-start="500" data-basealign="slide"
+                                data-responsive_offset="on" style="z-index:13;">
+                                <img src="include/rs-plugin/demos/assets/images/header_pen.png" alt="Image"
+                                    data-ww="['300px','300px','300px','300px']"
+                                    data-hh="['500px','500px','500px','500px']" data-no-retina>
+                            </div>
 
-                        <div class="tp-caption tp-resizeme rs-parallaxlevel-2" id="slide-18-layer-1"
-                             data-x="['center','center','center','center']" data-y="['middle','middle','middle','middle']" data-voffset="['-70','-70','-70','-90']"
-                             data-fontsize="['80','80','80','60']" data-lineheight="['80','80','80','60']"
-                             data-width="['none','none','none','360']" data-whitespace="['nowrap','nowrap','nowrap','normal']"
-                             data-transform_idle="o:1;"
-                             data-transform_in="y:-50px;rX:-45deg;sX:2;sY:2;opacity:0;s:1500;e:Power4.easeOut;"
-                             data-transform_out="y:30px;rX:45deg;sX:0.8;sY:0.8;opacity:0;s:600;e:Power2.easeInOut;"
-                             data-start="510" data-responsive_offset="on" data-end="2650"
-                             style="z-index:14; font-size:80px; line-height:80px; font-weight:700; color:#000; font-family:Roboto; text-align:center;">
-                            Merge PDFs.
-                        </div>
+                            <div class="tp-caption tp-resizeme rs-parallaxlevel-2" id="slide-18-layer-1"
+                                data-x="['center','center','center','center']"
+                                data-y="['middle','middle','middle','middle']" data-voffset="['-70','-70','-70','-90']"
+                                data-fontsize="['80','80','80','60']" data-lineheight="['80','80','80','60']"
+                                data-width="['none','none','none','360']"
+                                data-whitespace="['nowrap','nowrap','nowrap','normal']" data-transform_idle="o:1;"
+                                data-transform_in="y:-50px;rX:-45deg;sX:2;sY:2;opacity:0;s:1500;e:Power4.easeOut;"
+                                data-transform_out="y:30px;rX:45deg;sX:0.8;sY:0.8;opacity:0;s:600;e:Power2.easeInOut;"
+                                data-start="510" data-responsive_offset="on" data-end="2650"
+                                style="z-index:14; font-size:80px; line-height:80px; font-weight:700; color:#000; font-family:Roboto; text-align:center;">
+                                Merge PDFs.
+                            </div>
 
-                        <div class="tp-caption tp-resizeme rs-parallaxlevel-2" id="slide-18-layer-15"
-                             data-x="['center','center','center','center']" data-y="['middle','middle','middle','middle']" data-voffset="['-70','-70','-70','-90']"
-                             data-fontsize="['80','80','80','60']" data-lineheight="['80','80','80','60']"
-                             data-width="['none','none','none','360']" data-whitespace="['nowrap','nowrap','nowrap','normal']"
-                             data-transform_idle="o:1;"
-                             data-transform_in="y:-50px;rX:-45deg;sX:2;sY:2;opacity:0;s:1500;e:Power4.easeOut;"
-                             data-transform_out="y:30px;rX:45deg;sX:0.8;sY:0.8;opacity:0;s:600;e:Power2.easeInOut;"
-                             data-start="2940" data-responsive_offset="on" data-end="5100"
-                             style="z-index:15; font-size:80px; line-height:80px; font-weight:700; color:#000; font-family:Roboto; text-align:center;">
-                            Reorder Pages.
-                        </div>
+                            <div class="tp-caption tp-resizeme rs-parallaxlevel-2" id="slide-18-layer-15"
+                                data-x="['center','center','center','center']"
+                                data-y="['middle','middle','middle','middle']" data-voffset="['-70','-70','-70','-90']"
+                                data-fontsize="['80','80','80','60']" data-lineheight="['80','80','80','60']"
+                                data-width="['none','none','none','360']"
+                                data-whitespace="['nowrap','nowrap','nowrap','normal']" data-transform_idle="o:1;"
+                                data-transform_in="y:-50px;rX:-45deg;sX:2;sY:2;opacity:0;s:1500;e:Power4.easeOut;"
+                                data-transform_out="y:30px;rX:45deg;sX:0.8;sY:0.8;opacity:0;s:600;e:Power2.easeInOut;"
+                                data-start="2940" data-responsive_offset="on" data-end="5100"
+                                style="z-index:15; font-size:80px; line-height:80px; font-weight:700; color:#000; font-family:Roboto; text-align:center;">
+                                Reorder Pages.
+                            </div>
 
-                        <div class="tp-caption tp-resizeme rs-parallaxlevel-2" id="slide-18-layer-16"
-                             data-x="['center','center','center','center']" data-y="['middle','middle','middle','middle']" data-voffset="['-70','-70','-70','-90']"
-                             data-fontsize="['80','80','80','60']" data-lineheight="['80','80','80','60']"
-                             data-width="['none','none','none','400']" data-whitespace="['nowrap','nowrap','nowrap','normal']"
-                             data-transform_idle="o:1;"
-                             data-transform_in="y:-50px;rX:-45deg;sX:2;sY:2;opacity:0;s:1500;e:Power4.easeOut;"
-                             data-transform_out="y:30px;rX:45deg;sX:0.8;sY:0.8;opacity:0;s:600;e:Power2.easeInOut;"
-                             data-start="5390" data-responsive_offset="on"
-                             style="z-index:16; font-size:80px; line-height:80px; font-weight:700; color:#000; font-family:Roboto; text-align:center;">
-                            Edit PDFs.
-                        </div>
+                            <div class="tp-caption tp-resizeme rs-parallaxlevel-2" id="slide-18-layer-16"
+                                data-x="['center','center','center','center']"
+                                data-y="['middle','middle','middle','middle']" data-voffset="['-70','-70','-70','-90']"
+                                data-fontsize="['80','80','80','60']" data-lineheight="['80','80','80','60']"
+                                data-width="['none','none','none','400']"
+                                data-whitespace="['nowrap','nowrap','nowrap','normal']" data-transform_idle="o:1;"
+                                data-transform_in="y:-50px;rX:-45deg;sX:2;sY:2;opacity:0;s:1500;e:Power4.easeOut;"
+                                data-transform_out="y:30px;rX:45deg;sX:0.8;sY:0.8;opacity:0;s:600;e:Power2.easeInOut;"
+                                data-start="5390" data-responsive_offset="on"
+                                style="z-index:16; font-size:80px; line-height:80px; font-weight:700; color:#000; font-family:Roboto; text-align:center;">
+                                Edit PDFs.
+                            </div>
 
-                        <div class="tp-caption tp-resizeme rs-parallaxlevel-2" id="slide-18-layer-2"
-                             data-x="['center','center','center','center']" data-hoffset="['-8','-8','-8','-8']"
-                             data-y="['middle','middle','middle','middle']" data-voffset="['10','10','10','-10']"
-                             data-fontsize="['20','20','20','25']" data-lineheight="['20','20','20','30']"
-                             data-width="['none','none','none','360']" data-whitespace="['nowrap','nowrap','nowrap','normal']"
-                             data-transform_idle="o:1;"
-                             data-transform_in="y:50px;rX:45deg;sX:2;sY:2;opacity:0;s:1500;e:Power4.easeOut;"
-                             data-transform_out="opacity:0;s:300;" data-start="600" data-responsive_offset="on"
-                             style="z-index:17; font-size:20px; line-height:20px; font-weight:400; color:#444; font-family:Roboto; text-align:center;">
-                            Simple, fast PDF tools for everyday work.
-                        </div>
+                            <div class="tp-caption tp-resizeme rs-parallaxlevel-2" id="slide-18-layer-2"
+                                data-x="['center','center','center','center']" data-hoffset="['-8','-8','-8','-8']"
+                                data-y="['middle','middle','middle','middle']" data-voffset="['10','10','10','-10']"
+                                data-fontsize="['20','20','20','25']" data-lineheight="['20','20','20','30']"
+                                data-width="['none','none','none','360']"
+                                data-whitespace="['nowrap','nowrap','nowrap','normal']" data-transform_idle="o:1;"
+                                data-transform_in="y:50px;rX:45deg;sX:2;sY:2;opacity:0;s:1500;e:Power4.easeOut;"
+                                data-transform_out="opacity:0;s:300;" data-start="600" data-responsive_offset="on"
+                                style="z-index:17; font-size:20px; line-height:20px; font-weight:400; color:#444; font-family:Roboto; text-align:center;">
+                                Simple, fast PDF tools for everyday work.
+                            </div>
 
-                        <div class="tp-caption rev-btn rs-parallaxlevel-3" id="slide-18-layer-3"
-                             data-x="['center','center','center','center']"
-                             data-y="['middle','middle','middle','middle']" data-voffset="['92','92','92','92']"
-                             data-transform_idle="o:1;" data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:150;e:Power1.easeInOut;"
-                             data-style_hover="c:rgba(255,255,255,1);bg:rgba(32,85,199,1);"
-                             data-transform_in="y:100px;rX:90deg;opacity:0;s:1500;e:Power4.easeOut;"
-                             data-transform_out="opacity:0;s:300;" data-start="700"
-                             data-actions='[{"event":"click","action":"scrollbelow","offset":"-60px","delay":""}]'
-                             data-responsive_offset="on" data-responsive="off"
-                             style="z-index:18; line-height:50px; font-weight:700; color:#fff; font-family:Roboto; background-color:#296AF5; padding:0 30px; border-radius:3px; letter-spacing:2px; cursor:pointer;">
-                            CONTINUE
-                        </div>
+                            <div class="tp-caption rev-btn rs-parallaxlevel-3" id="slide-18-layer-3"
+                                data-x="['center','center','center','center']"
+                                data-y="['middle','middle','middle','middle']" data-voffset="['92','92','92','92']"
+                                data-transform_idle="o:1;"
+                                data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:150;e:Power1.easeInOut;"
+                                data-style_hover="c:rgba(255,255,255,1);bg:rgba(32,85,199,1);"
+                                data-transform_in="y:100px;rX:90deg;opacity:0;s:1500;e:Power4.easeOut;"
+                                data-transform_out="opacity:0;s:300;" data-start="700"
+                                data-actions='[{"event":"click","action":"scrollbelow","offset":"-60px","delay":""}]'
+                                data-responsive_offset="on" data-responsive="off"
+                                style="z-index:18; line-height:50px; font-weight:700; color:#fff; font-family:Roboto; background-color:#296AF5; padding:0 30px; border-radius:3px; letter-spacing:2px; cursor:pointer;">
+                                CONTINUE
+                            </div>
 
-                        <div class="tp-caption rev-scroll-btn revs-dark rs-parallaxlevel-5" id="slide-18-layer-13"
-                             data-x="['center','center','center','center']" data-y="['bottom','bottom','bottom','bottom']" data-voffset="['50','50','50','50']"
-                             data-width="35" data-height="55" data-transform_idle="o:1;"
-                             data-transform_in="y:-50px;opacity:0;s:1500;e:Power4.easeOut;"
-                             data-transform_out="opacity:0;s:300;" data-start="800"
-                             data-actions='[{"event":"click","action":"scrollbelow","offset":"-60px","delay":""}]'
-                             data-basealign="slide" data-responsive_offset="on" data-responsive="off"
-                             style="z-index:19; border:3px solid #333; border-radius:23px; cursor:pointer;">
-                            <span></span>
-                        </div>
-                    </li>
-                </ul>
-                <div class="tp-bannertimer tp-bottom" style="visibility:hidden !important;"></div>
+                            <div class="tp-caption rev-scroll-btn revs-dark rs-parallaxlevel-5" id="slide-18-layer-13"
+                                data-x="['center','center','center','center']"
+                                data-y="['bottom','bottom','bottom','bottom']" data-voffset="['50','50','50','50']"
+                                data-width="35" data-height="55" data-transform_idle="o:1;"
+                                data-transform_in="y:-50px;opacity:0;s:1500;e:Power4.easeOut;"
+                                data-transform_out="opacity:0;s:300;" data-start="800"
+                                data-actions='[{"event":"click","action":"scrollbelow","offset":"-60px","delay":""}]'
+                                data-basealign="slide" data-responsive_offset="on" data-responsive="off"
+                                style="z-index:19; border:3px solid #333; border-radius:23px; cursor:pointer;">
+                                <span></span>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="tp-bannertimer tp-bottom" style="visibility:hidden !important;"></div>
+                </div>
             </div>
-        </div>
-    </section>
-    <!-- /REPLACED HERO -->
+        </section>
+        <!-- /REPLACED HERO -->
 
-    <!-- Content
-
+        <!-- Content
     ============================================= -->
-
-    <section id="content">
-
-        <div class="content-wrap">
-
-            <div class="container">
-
-
-
-                <div id="section-nextgen" class="page-section mb-6">
-
-                    <div class="row">
-
-
-
-                        <div class="col-lg-7 text-center">
-
-                            <img src="demos/app-landing/images/desktop-select-pdf.png" alt="Merge & Split" data-animate="fadeInLeft">
-
-                        </div>
-
-
-
-                        <div class="col-lg-5">
-
-                            <div class="mt-6 d-none d-lg-block"></div>
-
-                            <img src="demos/app-landing/images/section/section-1-icon.png" alt="Image" class="d-block mb-4">
-
-                            <div class="emphasis-title mb-4">
-
-                                <span class="before-heading">Focused, not bloated</span>
-
-                                <h2 style="font-size: 42px;" class="font-body ls-1 fw-normal">All the features you want—without the fluff</h2>
-
-                            </div>
-
-                            <p style="color: #777;" class="lead">The core PDF tools you use daily, done right. No unnecessary AI, no upsells—just a clean workflow that keeps your costs down.</p>
-
-                            <a href="#" class="section-more-link">Try It Free <i class="uil uil-angle-right-b"></i></a>
-
-                        </div>
-
-
-
-                    </div>
-
-                </div>
-
-
-
-                <div class="line"></div><div class="clear"></div>
-
-
-
-                <div id="section-stunning-graphics" class="page-section mt-5 mb-6">
-
-                    <div class="row">
-
-
-
-                        <div class="col-lg-5">
-
-                            <div class="mt-6 d-none d-lg-block"></div>
-
-                            <img src="demos/app-landing/images/section/section-2-icon.png" alt="Image" class="d-block mb-4">
-
-                            <div class="emphasis-title mb-4">
-
-                                <span class="before-heading">ONE FAIR PRICE</span>
-
-                                <h2 style="font-size: 42px;" class="font-body ls-1 fw-normal">$150 per person, per year</h2>
-
-                            </div>
-
-                            <p style="color: #777;" class="lead">No tiers, no tricks. Most suites run $250–$320—we keep it simple and affordable.</p>
-
-                            <a href="#" class="section-more-link">Try It Free <i class="uil uil-angle-right-b"></i></a>
-
-                        </div>
-
-
-
-                        <div class="col-lg-7 text-center">
-
-                            <img src="demos/app-landing/images/desktop-select-pdf.png" alt="Reorder & Rotate" data-animate="fadeInRight">
-
-                        </div>
-
-
-
-                    </div>
-
-                </div>
-
-
-
-                <div class="line"></div><div class="clear"></div>
-
-
-
-            </div>
-
-
-
-            <div id="section-secured-solutions" class="page-section section p-0 mt-4" style="background: url('demos/app-landing/images/section/iphone-3d-bg.png') no-repeat left bottom; background-size: 100% auto;" data-height-lg="700" data-height-xs="450">
-
+        <section id="content">
+            <div class="content-wrap">
                 <div class="container">
 
-                    <div class="row">
-
-                        <div class="col-lg-5 offset-lg-6">
-
-                            <div class="mt-6 d-none d-lg-block"></div>
-
-                            <div class="mt-6 d-none d-lg-block"></div>
-
-                            <img src="demos/app-landing/images/section/section-3-icon.png" alt="Image" class="d-block mb-4">
-
-                            <div class="emphasis-title mb-4">
-
-                                <span class="before-heading">PRIVACY BY DEFAULT</span>
-
-                                <h2 style="font-size: 42px;" class="font-body ls-1 fw-normal">Your PDFs stay with you</h2>
-
+                    <div id="section-nextgen" class="page-section mb-6">
+                        <div class="row">
+                            <div class="col-lg-7 text-center">
+                                <img src="demos/app-landing/images/desktop-select-pdf.png" alt="Merge & Split"
+                                    data-animate="fadeInLeft">
                             </div>
 
-                            <p style="color: #777;" class="lead">Your files never leave your computer. No uploads, no servers—everything happens on your device for maximum privacy.</p>
+                            <div class="col-lg-5">
+                                <div class="mt-6 d-none d-lg-block"></div>
+                                <img src="demos/app-landing/images/section/section-1-icon.png" alt="Image"
+                                    class="d-block mb-4">
+                                <div class="emphasis-title mb-4">
+                                    <span class="before-heading">Focused, not bloated</span>
+                                    <h2 style="font-size: 42px;" class="font-body ls-1 fw-normal">All the features you
+                                        want—without the fluff</h2>
+                                </div>
+                                <p style="color: #777;" class="lead">The core PDF tools you use daily, done right. No
+                                    unnecessary AI, no upsells—just a clean workflow that keeps your costs down.</p>
 
-                            <a href="#" class="section-more-link">Try It Free <i class="uil uil-angle-right-b"></i></a>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="video-wrap" style="position: absolute; height: 100%; z-index: 1;">
-
-                    <div class="video-overlay d-none d-lg-block" style="background: url('demos/app-landing/images/desktop-select-pdf.png') no-repeat left top; background-size: auto 100%;" data-animate="fadeInLeft"></div>
-
-                </div>
-
-            </div>
-
-
-
-            <div class="clear mb-5"></div>
-
-            <div id="section-features" class="container">
-                <div class="row justify-content-center col-mb-80">
-                    <div class="col-12">
-                        <h4 class="font-body mb-4">Feature List</h4>
-
-                        <div class="row row-cols-1 row-cols-md-2 g-4">
-                            <div class="col">
-                                <ul class="iconlist iconlist-xl mb-0">
-                                    <li><i class="bi-check-lg"></i> <span>Merge multiple PDFs into a single file</span></li>
-                                    <li><i class="bi-check-lg"></i> <span>Split a PDF or extract selected pages</span></li>
-                                    <li><i class="bi-check-lg"></i> <span>Reorder pages with simple drag &amp; drop</span></li>
-                                    <li><i class="bi-check-lg"></i> <span>Rotate individual pages</span></li>
-                                    <li><i class="bi-check-lg"></i> <span>Add or replace images</span></li>
-                                    <li><i class="bi-check-lg"></i> <span>Apply text or image watermarks</span></li>
-                                </ul>
-                            </div>
-
-                            <div class="col">
-                                <ul class="iconlist iconlist-xl mb-0">
-                                    <li><i class="bi-check-lg"></i> <span>Highlight, underline, or strikethrough text</span></li>
-                                    <li><i class="bi-check-lg"></i> <span>Insert text boxes</span></li>
-                                    <li><i class="bi-check-lg"></i> <span>Add notes &amp; comments</span></li>
-                                    <li><i class="bi-check-lg"></i> <span>Place stamps (Approved, Paid, etc.)</span></li>
-                                    <li><i class="bi-check-lg"></i> <span>Draw shapes or freehand</span></li>
-                                    <li><i class="bi-check-lg"></i> <span>Sign documents (typed or hand-drawn)</span></li>
-                                </ul>
+                                <a href="https://github.com/jfc37/SimpleOfficeTools/releases/latest/download/SimpleOfficeTools.appinstaller"
+                                    class="section-more-link" target="_blank" rel="noopener">
+                                    Try It Free <i class="uil uil-angle-right-b"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
+
+                    <div class="line"></div>
+                    <div class="clear"></div>
+
+                    <div id="section-stunning-graphics" class="page-section mt-5 mb-6">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="mt-6 d-none d-lg-block"></div>
+                                <img src="demos/app-landing/images/section/section-2-icon.png" alt="Image"
+                                    class="d-block mb-4">
+                                <div class="emphasis-title mb-4">
+                                    <span class="before-heading">ONE FAIR PRICE</span>
+                                    <h2 style="font-size: 42px;" class="font-body ls-1 fw-normal">$150 per person, per
+                                        year</h2>
+                                </div>
+                                <p style="color: #777;" class="lead">No tiers, no tricks. Most suites run $250–$320—we
+                                    keep it simple and affordable.</p>
+
+                                <a href="https://github.com/jfc37/SimpleOfficeTools/releases/latest/download/SimpleOfficeTools.appinstaller"
+                                    class="section-more-link" target="_blank" rel="noopener">
+                                    Try It Free <i class="uil uil-angle-right-b"></i>
+                                </a>
+                            </div>
+
+                            <div class="col-lg-7 text-center">
+                                <img src="demos/app-landing/images/desktop-select-pdf.png" alt="Reorder & Rotate"
+                                    data-animate="fadeInRight">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="line"></div>
+                    <div class="clear"></div>
+
                 </div>
-            </div>
 
-            <div class="clear mb-5"></div>
-
-            <div class="container">
-
-                <div id="section-pricing" class="page-section p-0 m-0">
-                    <h4 class="font-body mb-4">Pricing</h4>
-
-                    <div id="pricing-switch" class="pricing row col-mb-30 mb-5">
-
-
-                        <div class="offset-lg-4 offset-md-3 col-lg-4 col-md-6">
-
-                            <div class="pricing-box text-center">
-
-                                <div class="pricing-title text-uppercase">
-
-                                    <h3>Business</h3>
-
+                <div id="section-secured-solutions" class="page-section section p-0 mt-4"
+                    style="background: url('demos/app-landing/images/section/iphone-3d-bg.png') no-repeat left bottom; background-size: 100% auto;"
+                    data-height-lg="700" data-height-xs="450">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-5 offset-lg-6">
+                                <div class="mt-6 d-none d-lg-block"></div>
+                                <div class="mt-6 d-none d-lg-block"></div>
+                                <img src="demos/app-landing/images/section/section-3-icon.png" alt="Image"
+                                    class="d-block mb-4">
+                                <div class="emphasis-title mb-4">
+                                    <span class="before-heading">PRIVACY BY DEFAULT</span>
+                                    <h2 style="font-size: 42px;" class="font-body ls-1 fw-normal">Your PDFs stay with
+                                        you</h2>
                                 </div>
+                                <p style="color: #777;" class="lead">Your files never leave your computer. No uploads,
+                                    no servers—everything happens on your device for maximum privacy.</p>
 
-                                <div class="pricing-price">
+                                <a href="https://github.com/jfc37/SimpleOfficeTools/releases/latest/download/SimpleOfficeTools.appinstaller"
+                                    class="section-more-link" target="_blank" rel="noopener">
+                                    Try It Free <i class="uil uil-angle-right-b"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
 
-                                    <div class="pts-content pts-content-true"><span class="price-unit">&dollar;</span>150<span class="price-tenure">per year / per device</span></div>
+                    <div class="video-wrap" style="position: absolute; height: 100%; z-index: 1;">
+                        <div class="video-overlay d-none d-lg-block"
+                            style="background: url('demos/app-landing/images/desktop-select-pdf.png') no-repeat left top; background-size: auto 100%;"
+                            data-animate="fadeInLeft"></div>
+                    </div>
+                </div>
 
-                                </div>
+                <div class="clear mb-5"></div>
 
-                                <div class="pricing-features border-0 bg-transparent">
+                <div id="section-features" class="container">
+                    <div class="row justify-content-center col-mb-80">
+                        <div class="col-12">
+                            <h4 class="font-body mb-4">Feature List</h4>
 
-                                    <ul>
-
-                                        <li>Full access to Simple Office Tools</li>
-                                        <li>Fast, lightweight app for everyday work</li>
-                                        <li>Updates included</li>
-                                        <li>1 user seat • Email support</li>
-
+                            <div class="row row-cols-1 row-cols-md-2 g-4">
+                                <div class="col">
+                                    <ul class="iconlist iconlist-xl mb-0">
+                                        <li><i class="bi-check-lg"></i> <span>Merge multiple PDFs into a single
+                                                file</span></li>
+                                        <li><i class="bi-check-lg"></i> <span>Split a PDF or extract selected
+                                                pages</span></li>
+                                        <li><i class="bi-check-lg"></i> <span>Reorder pages with simple drag &amp;
+                                                drop</span></li>
+                                        <li><i class="bi-check-lg"></i> <span>Rotate individual pages</span></li>
+                                        <li><i class="bi-check-lg"></i> <span>Add or replace images</span></li>
+                                        <li><i class="bi-check-lg"></i> <span>Apply text or image watermarks</span></li>
                                     </ul>
-
                                 </div>
 
-                                <div class="pricing-action">
-
-                                    <div class="pts-content pts-content-false"><a href="#modal-get-started" data-lightbox="inline" data-pricing-plan="Professional Monthly Plan" class="button button-large button-rounded text-capitalize ls-0" style="border-radius: 23px;">Start Free Trial</a></div>
-
-                                    <!-- Terms Modal -->
-                                    <div class="modal1 mfp-hide" id="modal-terms" role="dialog" aria-labelledby="terms-title">
-                                        <div class="block mx-auto" style="background:#FFF; max-width: 900px;">
-                                            <div class="p-5">
-                                                <h3 id="terms-title" class="font-body mb-2">Terms of Service</h3>
-                                                <p class="mb-4" style="font-size: 0.9rem; color:#6c757d;">
-                                                    Last updated: 10 September 2025
-                                                </p>
-
-                                                <!-- Scrollable body -->
-                                                <div style="max-height: 70vh; overflow:auto; padding-right: 12px;">
-                                                    <!-- Replace placeholders like [Company legal name] and [support@yourdomain.com] before publishing -->
-
-                                                    <h5>1. Agreement</h5>
-                                                    <p>By downloading, installing, activating a licence, or otherwise using Simple Office Tools (the “App” or “Service”), you agree to these Terms of Service (“Terms”). If you do not agree, do not use the App.</p>
-
-                                                    <h5>2. Who We Are &amp; Contact</h5>
-                                                    <p>[Company legal name], trading as <strong>Simple Office Tools</strong>. Contact: <a href="mailto:support@yourdomain.com">support@yourdomain.com</a>. Payments are processed by <strong>Paddle</strong> (Paddle.com), our merchant of record, which handles billing, invoicing, taxes, and buyer support.</p>
-
-                                                    <h5>3. Eligibility &amp; Accounts</h5>
-                                                    <p>You must be legally capable of entering into a contract. If you create an account, you are responsible for safeguarding it and keeping your details current.</p>
-
-                                                    <h5>4. Licence &amp; Activation</h5>
-                                                    <p><strong>Grant.</strong> We grant you a non-exclusive, non-transferable licence to install and use the App in accordance with these Terms and your selected plan.</p>
-                                                    <p><strong>Per-seat licensing.</strong> Each paid seat authorises use on <strong>one device</strong> at a time. Seat transfers are permitted (e.g., when replacing a machine); we may limit transfers to prevent abuse (e.g., up to <strong>2 transfers per 12 months</strong>).</p>
-                                                    <p><strong>Trial.</strong> We may offer a <strong>30-day</strong> free trial. Trial features may be limited and may cease at the end of the trial unless a paid licence is activated.</p>
-                                                    <p><strong>Activation &amp; verification.</strong> The App may verify licence status online and record device identifiers (e.g., a hashed machine ID) to manage seats and prevent fraud.</p>
-
-                                                    <h5>5. Plans, Pricing &amp; Taxes</h5>
-                                                    <p>Prices and features are posted on our site and may change. Taxes are calculated and collected by Paddle as applicable based on your location. If we change pricing for your subscription, we will notify you in advance and the change will apply on your next renewal.</p>
-
-                                                    <h5>6. Payments, Renewals &amp; Cancellations</h5>
-                                                    <p><strong>Merchant of Record.</strong> Paddle processes your payment and issues invoices/receipts. Your purchase is also subject to Paddle’s buyer terms.</p>
-                                                    <p><strong>Subscriptions.</strong> Plans renew automatically unless cancelled before the renewal date. You can cancel at any time to stop future renewal; access continues until the end of the current term.</p>
-                                                    <p><strong>Failed payments.</strong> If payment cannot be processed, we may suspend or terminate the licence until payment is resolved.</p>
-                                                    <p><strong>Refunds.</strong> Refunds are handled by our merchant of record, Paddle. Our refund windows and how to request a refund are set out in our
-                                                        <a href="#modal-refund"
-                                                           onclick="jQuery.magnificPopup.open({ items: { src: '#modal-refund' }, type: 'inline' }); return false;">
-                                                            Refund Policy
-                                                        </a>. Nothing here limits rights you may have under applicable consumer laws.</p>
-
-                                                    <h5>7. Acceptable Use</h5>
-                                                    <p>You agree not to misuse the App. Prohibited activities include: reverse engineering; circumventing technical measures; using the App to infringe others’ rights; uploading or distributing malware; attempting to overload, interfere with, or gain unauthorised access to our services.</p>
-
-                                                    <h5>8. Intellectual Property</h5>
-                                                    <p>The App, documentation, and all related materials are protected by intellectual property laws. We reserve all rights not expressly granted. You may not remove or obscure proprietary notices.</p>
-
-                                                    <h5>9. Third-Party Services</h5>
-                                                    <p>We integrate with third-party providers (e.g., Paddle for billing; optional diagnostics). Your use of those services may be subject to their terms and privacy policies.</p>
-
-                                                    <h5>10. Updates &amp; Changes</h5>
-                                                    <p>We may update the App to improve performance, security, or add/remove features. We may modify these Terms by posting an updated version. Material changes will be notified; continued use after changes means you accept the new Terms.</p>
-
-                                                    <h5>11. Privacy</h5>
-                                                    <p><strong>Your documents stay on your machine.</strong> The App processes PDF and image files locally; we do not upload their contents to our servers. For more, see our Privacy Notice.</p>
-
-                                                    <h5>12. Disclaimers</h5>
-                                                    <p>To the maximum extent permitted by law, the App is provided <strong>“as is”</strong> and <strong>“as available”</strong>, without warranties of any kind, express or implied. We do not warrant that the App will be error-free or uninterrupted.</p>
-
-                                                    <h5>13. Limitation of Liability</h5>
-                                                    <p>To the maximum extent permitted by law, our total liability for any claim arising out of or relating to these Terms or the App is limited to the amounts you paid for the App in the <strong>12 months</strong> before the event giving rise to the claim. We are not liable for any indirect, incidental, special, consequential, or punitive damages, or for loss of profits, data, goodwill, or business interruption.</p>
-
-                                                    <h5>14. Termination</h5>
-                                                    <p>You may stop using the App at any time. We may suspend or terminate your access if you materially breach these Terms. Upon termination, your licence ends and you must cease use of the App. Sections that by their nature should survive (e.g., IP, disclaimers, limitations of liability) will survive.</p>
-
-                                                    <h5>15. Governing Law &amp; Disputes</h5>
-                                                    <p>These Terms are governed by the laws of <strong>New Zealand</strong> (without regard to conflict of laws). Disputes will be resolved by the courts of <strong>Wellington, New Zealand</strong>, unless otherwise required by mandatory consumer laws of your country of residence.</p>
-
-                                                    <h5>16. Contact</h5>
-                                                    <p>Questions? Email <a href="mailto:support@yourdomain.com">support@yourdomain.com</a> and include your <strong>Paddle order number</strong>.</p>
-                                                </div>
-
-
-                                                <div class="mt-4 d-flex justify-content-end">
-                                                    <a href="#" class="button button-rounded m-0" onClick="jQuery.magnificPopup.close();return false;">Close</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                    <!-- Privacy Modal -->
-                                    <div class="modal1 mfp-hide" id="modal-privacy" role="dialog" aria-labelledby="privacy-title">
-                                        <div class="block mx-auto" style="background:#FFF; max-width: 900px;">
-                                            <div class="p-5">
-                                                <h3 id="privacy-title" class="font-body mb-2">Privacy Notice</h3>
-                                                <p class="mb-4" style="font-size: 0.9rem; color:#6c757d;">
-                                                    Last updated: 10 September 2025
-                                                </p>
-
-                                                <div style="max-height: 70vh; overflow:auto; padding-right: 12px;">
-                                                    <!-- Replace placeholders like [Company legal name] and [privacy@yourdomain.com] before publishing -->
-
-                                                    <p><strong>Key point:</strong> <em>Your documents stay on your machine.</em> The app processes PDF and image files locally; we do <strong>not</strong> upload their contents to our servers.</p>
-
-                                                    <h5>1. Who We Are</h5>
-                                                    <p>[Company legal name], trading as <strong>Simple Office Tools</strong> (“we”, “us”). Email: <a href="mailto:privacy@yourdomain.com">privacy@yourdomain.com</a>. Payments are processed by <strong>Paddle</strong> (Paddle.com), which acts as our merchant of record and processes purchases as an independent controller.</p>
-
-                                                    <h5>2. What We Collect</h5>
-                                                    <ul>
-                                                        <li><strong>Account &amp; purchase details:</strong> name, email, company, billing country, order ID, tax details (handled by Paddle; we receive limited information for fulfilment/support).</li>
-                                                        <li><strong>Licence &amp; activation data:</strong> licence key/ID, activation/deactivation timestamps, plan/seat count, and device metadata needed to manage seats (e.g., a <em>hashed</em> device identifier, OS version, app version, IP-derived country for tax/compliance). We do <strong>not</strong> store raw MAC addresses.</li>
-                                                        <li><strong>Diagnostics (optional):</strong> crash reports and basic telemetry (e.g., error codes, performance, feature usage). You can opt out in <em>Settings</em> if enabled.</li>
-                                                        <li><strong>Support communications:</strong> messages you send us (email or in-app forms) and related attachments.</li>
-                                                    </ul>
-
-                                                    <h5>3. How We Use Data</h5>
-                                                    <ul>
-                                                        <li>Provide, secure, and maintain the app and your licence.</li>
-                                                        <li>Process purchases, renewals, and invoicing via Paddle.</li>
-                                                        <li>Detect and prevent fraud or licence abuse.</li>
-                                                        <li>Troubleshoot, improve performance, and plan features (for diagnostics if enabled).</li>
-                                                        <li>Provide customer support and communicate important changes.</li>
-                                                        <li>Comply with legal, tax, and accounting obligations.</li>
-                                                    </ul>
-
-                                                    <h5>4. Legal Bases (EEA/UK)</h5>
-                                                    <p>We rely on: <strong>performance of a contract</strong> (to supply the app); <strong>legitimate interests</strong> (security, licence management, product improvement); <strong>consent</strong> (where required, e.g., optional telemetry); and <strong>legal obligation</strong> (tax/records).</p>
-
-                                                    <h5>5. Sharing</h5>
-                                                    <ul>
-                                                        <li><strong>Paddle (payments/MoR):</strong> for orders, tax, antifraud, invoicing.</li>
-                                                        <li><strong>Diagnostics provider (optional):</strong> to collect crash reports/telemetry.</li>
-                                                        <li><strong>Service providers:</strong> IT hosting/support under confidentiality agreements.</li>
-                                                        <li><strong>Legal/compliance:</strong> if required by law or to protect rights.</li>
-                                                    </ul>
-                                                    <p>We do <strong>not sell</strong> personal data.</p>
-
-                                                    <h5>6. International Transfers</h5>
-                                                    <p>We may transfer/store data outside your country. Where required, we use lawful mechanisms (e.g., EU Standard Contractual Clauses) and appropriate safeguards.</p>
-
-                                                    <h5>7. Retention</h5>
-                                                    <ul>
-                                                        <li><strong>Licence &amp; purchase records:</strong> for the life of your account plus up to <strong>7 years</strong> (tax/records).</li>
-                                                        <li><strong>Diagnostics:</strong> typically <strong>90 days</strong> unless needed longer for security/investigation.</li>
-                                                        <li><strong>Support communications:</strong> up to <strong>24 months</strong> after closure.</li>
-                                                    </ul>
-                                                    <p>We delete or anonymise data when no longer needed.</p>
-
-                                                    <h5>8. Your Rights</h5>
-                                                    <p>Depending on your location, you may have rights to access, correct, delete, port, or object/restrict processing, and to withdraw consent (for telemetry). You can also lodge a complaint with your local data authority (e.g., NZ Privacy Commissioner, EU/UK supervisory authorities). To exercise rights, email <a href="mailto:privacy@yourdomain.com">privacy@yourdomain.com</a>.</p>
-
-                                                    <h5>9. Security</h5>
-                                                    <p>We use technical and organisational measures appropriate to the risk, including encryption in transit and access controls. No system is 100% secure.</p>
-
-                                                    <h5>10. Children</h5>
-                                                    <p>The app is not intended for children under 16. We do not knowingly collect their data.</p>
-
-                                                    <h5>11. Changes</h5>
-                                                    <p>We may update this Notice; material changes will be highlighted on our site. Continued use indicates acceptance.</p>
-
-                                                    <h5>12. Contact</h5>
-                                                    <p>Privacy questions: <a href="mailto:privacy@yourdomain.com">privacy@yourdomain.com</a>. For billing matters, include your <strong>Paddle order number</strong>.</p>
-                                                </div>
-
-                                                <div class="mt-4 d-flex justify-content-end">
-                                                    <a href="#" class="button button-rounded m-0" onClick="jQuery.magnificPopup.close();return false;">Close</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Refund Modal -->
-                                    <div class="modal1 mfp-hide" id="modal-refund" role="dialog" aria-labelledby="refund-title">
-                                        <div class="block mx-auto" style="background:#FFF; max-width: 900px;">
-                                            <div class="p-5">
-                                                <h3 id="refund-title" class="font-body mb-2">Refund Policy</h3>
-                                                <p class="mb-4" style="font-size: 0.9rem; color:#6c757d;">
-                                                    Last updated: 10 September 2025
-                                                </p>
-
-                                                <div style="max-height: 70vh; overflow:auto; padding-right: 12px;">
-                                                    <!-- Replace placeholders like [support@yourdomain.com] before publishing -->
-
-                                                    <h5>1. Purchases via Paddle</h5>
-                                                    <p>We sell through <strong>Paddle</strong>, our merchant of record. Refunds are issued via Paddle to the original payment method where eligible. Your purchase is also governed by Paddle’s buyer terms and applicable consumer laws.</p>
-
-                                                    <h5>2. Money-Back Window</h5>
-                                                    <ul>
-                                                        <li><strong>New purchases:</strong> If the app does not work as described for you, you may request a refund within <strong>14 days</strong> of purchase.</li>
-                                                        <li><strong>Renewals:</strong> You may request a refund within <strong>7 days</strong> of renewal if you did not intend to renew or the app was not used after renewal (we may ask you to deactivate the licence).</li>
-                                                    </ul>
-                                                    <p><em>Need help first?</em> Many issues can be resolved quickly—contact support and we’ll work with you.</p>
-
-                                                    <h5>3. How to Request a Refund</h5>
-                                                    <p>Email <a href="mailto:support@yourdomain.com">support@yourdomain.com</a> with:</p>
-                                                    <ul>
-                                                        <li>Your <strong>Paddle order number</strong> (starts with <em>PO</em> or <em>txn_</em>)</li>
-                                                        <li>Purchase email and date</li>
-                                                        <li>A brief reason for the request (helps us improve)</li>
-                                                    </ul>
-                                                    <p>We will review and, if eligible, initiate the refund via Paddle.</p>
-
-                                                    <h5>4. Non-Refundable Cases</h5>
-                                                    <ul>
-                                                        <li>Requests outside the windows above (unless required by law)</li>
-                                                        <li>Evidence of <strong>licence abuse</strong> or excessive seat transfers</li>
-                                                        <li><strong>Volume/enterprise orders</strong> (e.g., &gt;20 seats) after delivery, unless your contract states otherwise</li>
-                                                        <li><strong>Bank fees, currency fluctuations,</strong> or charges not controlled by us</li>
-                                                    </ul>
-
-                                                    <h5>5. Subscriptions &amp; Cancellations</h5>
-                                                    <p>Cancelling stops <strong>future</strong> renewals. Unless stated otherwise, we do not provide pro-rated refunds for unused time after the applicable refund window.</p>
-
-                                                    <h5>6. Statutory Rights</h5>
-                                                    <p>Nothing in this policy limits rights that cannot be excluded by law (e.g., New Zealand Consumer Guarantees Act; EU/UK consumer laws for digital content). Where such rights apply, we will honour them.</p>
-
-                                                    <h5>7. Contact</h5>
-                                                    <p>Questions or refund requests: <a href="mailto:support@yourdomain.com">support@yourdomain.com</a>. Include your <strong>Paddle order number</strong> for faster processing.</p>
-                                                </div>
-
-                                                <div class="mt-4 d-flex justify-content-end">
-                                                    <a href="#" class="button button-rounded m-0" onClick="jQuery.magnificPopup.close();return false;">Close</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
+                                <div class="col">
+                                    <ul class="iconlist iconlist-xl mb-0">
+                                        <li><i class="bi-check-lg"></i> <span>Highlight, underline, or strikethrough
+                                                text</span></li>
+                                        <li><i class="bi-check-lg"></i> <span>Insert text boxes</span></li>
+                                        <li><i class="bi-check-lg"></i> <span>Add notes &amp; comments</span></li>
+                                        <li><i class="bi-check-lg"></i> <span>Place stamps (Approved, Paid, etc.)</span>
+                                        </li>
+                                        <li><i class="bi-check-lg"></i> <span>Draw shapes or freehand</span></li>
+                                        <li><i class="bi-check-lg"></i> <span>Sign documents (typed or
+                                                hand-drawn)</span></li>
+                                    </ul>
                                 </div>
-
                             </div>
-
-
-
                         </div>
-
-
                     </div>
-
-
-
-                    <!-- Modal -->
-
-                    <div class="modal1 mfp-hide" id="modal-get-started">
-
-                        <div class="block mx-auto" style="background-color: #FFF; max-width: 800px;">
-
-                            <div class="form-widget p-5" data-loader="button">
-
-                                <div class="form-result"></div>
-
-                                <form action="#" id="get-started-form" method="post" class="mb-0">
-
-
-
-                                    <div class="row">
-
-                                        <div class="col-md-8">
-
-                                            <h3 class="font-body">Register for an Account</h3>
-
-                                        </div>
-
-                                        <div class="col-md-4">
-
-                                            <div id="modal-get-started-package"></div>
-
-                                        </div>
-
-                                    </div>
-
-
-
-                                    <div class="row">
-
-                                        <div class="col-md-6 form-group">
-
-                                            <label class="font-body text-capitalize" for="get-started-form-username">Choose Username:</label>
-
-                                            <input type="text" id="get-started-form-username" name="get-started-form-username" value="" class="form-control required no-error-msg">
-
-                                        </div>
-
-
-
-                                        <div class="col-md-6 form-group">
-
-                                            <label class="font-body text-capitalize" for="get-started-form-email">Your Email:</label>
-
-                                            <input type="email" id="get-started-form-email" name="get-started-form-email" value="" class="form-control required email no-error-msg">
-
-                                        </div>
-
-
-
-                                        <div class="w-100"></div>
-
-
-
-                                        <div class="col-md-6 form-group">
-
-                                            <label class="font-body text-capitalize" for="get-started-form-password">Choose Password:</label>
-
-                                            <input type="password" id="get-started-form-password" name="get-started-form-password" value="" class="form-control required no-error-msg">
-
-                                        </div>
-
-
-
-                                        <div class="col-md-6 form-group">
-
-                                            <label class="font-body text-capitalize" for="get-started-form-password">Retype Password:</label>
-
-                                            <input type="password" id="get-started-form-repassword" name="get-started-form-repassword" value="" class="form-control required no-error-msg">
-
-                                        </div>
-
-
-
-                                        <!-- Package Selector Hidden Input Value Setter -->
-
-                                        <input type="hidden" id="get-started-form-package" name="get-started-form-package" value="Free">
-
-
-
-                                        <div class="col-12 form-group">
-
-                                            <label>
-                                                <input type="checkbox" id="get-started-form-agree" name="get-started-form-agree" value="1" style="position: relative; top: 2px; margin-right: 5px;">
-                                                I Agree to the <a href="#modal-terms" data-lightbox="inline">Terms &amp; Conditions</a>
-                                            </label>
-
-                                        </div>
-
-
-
-                                        <div class="col-12 form-group">
-
-                                            <div class="d-flex justify-content-between">
-
-                                                <button class="button button-rounded m-0" id="get-started-form-submit" name="get-started-form-submit" value="login">Get Started</button>
-
-                                                <a href="#" data-scrollto="#section-pricing" data-easing="easeInOutExpo" data-speed="1250" data-offset="160" onClick="jQuery.magnificPopup.close();">Change Plan?</a>
-
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-
-
-
-                                </form>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-
                 </div>
 
-
-
+                <div class="line"></div>
                 <div class="clear"></div>
 
-            </div>
-        </div>
+                <div class="container">
+                    <div id="section-pricing" class="page-section p-0 m-0">
+                        <h4 class="font-body mb-4">Pricing</h4>
 
-    </section><!-- #content end -->
+                        <div id="pricing-switch" class="pricing row col-mb-30 mb-5">
+                            <div class="offset-lg-4 offset-md-3 col-lg-4 col-md-6">
+                                <div class="pricing-box text-center">
+                                    <div class="pricing-title text-uppercase">
+                                        <h3>Business</h3>
+                                    </div>
 
-    <!-- Footer (unchanged) -->
-    <footer id="footer" style="background-color: #FFF;">
-        <div id="copyrights" class="bg-transparent mt-4 pt-0">
-            <div class="container">
-                <div class="w-100 text-center text-md-start">
-                    Copyrights &copy; 2023 All Rights Reserved by Canvas Inc.<br>
-                    <div class="copyright-links">
-                        <a href="#modal-terms" data-lightbox="inline">Terms of Use</a> /
-                        <a href="#modal-privacy" data-lightbox="inline">Privacy Policy</a> /
-                        <a href="#modal-refund" data-lightbox="inline">Refund Policy</a>
+                                    <div class="pricing-price">
+                                        <div class="pts-content pts-content-true"><span
+                                                class="price-unit">&dollar;</span>150<span class="price-tenure">per year
+                                                / per device</span></div>
+                                    </div>
+
+                                    <div class="pricing-features border-0 bg-transparent">
+                                        <ul>
+                                            <li>Full access to Simple Office Tools</li>
+                                            <li>Fast, lightweight app for everyday work</li>
+                                            <li>Updates included</li>
+                                            <li>1 user seat • Email support</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="pricing-action">
+                                        <div class="pts-content pts-content-false">
+                                            <a href="https://github.com/jfc37/SimpleOfficeTools/releases/latest/download/SimpleOfficeTools.appinstaller"
+                                                target="_blank" rel="noopener"
+                                                class="button button-large button-rounded text-capitalize ls-0"
+                                                style="border-radius: 23px;">Start Free Trial</a>
+                                        </div>
+
+                                        <!-- Simple inline link to Refund Policy (stand-alone page) -->
+                                        <p class="mt-3" style="font-size: 0.9rem; color:#6c757d;">
+                                            Refunds are handled by our merchant of record, Paddle. See our
+                                            <a href="refund-policy.html">Refund Policy</a>.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Removed unused modals and signup modal -->
                     </div>
+
+                    <div class="clear"></div>
                 </div>
             </div>
-        </div><!-- #copyrights end -->
-    </footer><!-- #footer end -->
+        </section><!-- #content end -->
 
-</div><!-- #wrapper end -->
+        <!-- Footer -->
+        <footer id="footer" style="background-color: #FFF;">
+            <div id="copyrights" class="bg-transparent mt-4 pt-0">
+                <div class="container">
+                    <div class="w-100 text-center text-md-start">
+                        Copyrights &copy; 2025 Simple Office Tools<br>
+                        <div class="copyright-links">
+                            <a href="terms-and-conditions.html">Terms of Use</a> /
+                            <a href="privacy-policy.html">Privacy Policy</a> /
+                            <a href="refund-policy.html">Refund Policy</a>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- #copyrights end -->
+        </footer><!-- #footer end -->
 
-<!-- Go To Top -->
-<div id="gotoTop" class="uil uil-angle-up"></div>
+    </div><!-- #wrapper end -->
 
-<!-- Required JS for the Parallax Hero -->
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-<script src="include/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
-<script src="include/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
-<script src="include/rs-plugin/js/extensions/revolution.extension.video.min.js"></script>
-<script src="include/rs-plugin/js/extensions/revolution.extension.slideanims.min.js"></script>
-<script src="include/rs-plugin/js/extensions/revolution.extension.actions.min.js"></script>
-<script src="include/rs-plugin/js/extensions/revolution.extension.layeranimation.min.js"></script>
-<script src="include/rs-plugin/js/extensions/revolution.extension.navigation.min.js"></script>
-<script src="include/rs-plugin/js/extensions/revolution.extension.parallax.min.js"></script>
+    <!-- Go To Top -->
+    <div id="gotoTop" class="uil uil-angle-up"></div>
 
-<script>
-    jQuery(function($){
-        if (!$.fn.revolution) { console.error('Revolution Slider plugin not loaded.'); return; }
-        $("#rev_slider_6_1").show().revolution({
-            sliderType:"hero",
-            sliderLayout:"fullscreen",
-            dottedOverlay:"none",
-            delay:9000,
-            navigation:{},
-            responsiveLevels:[1240,1024,778,480],
-            visibilityLevels:[1240,1024,778,480],
-            gridwidth:[1240,1024,778,480],
-            gridheight:[868,768,960,720],
-            lazyType:"none",
-            parallax:{
-                type:"scroll",
-                origo:"slidercenter",
-                speed:400,
-                levels:[10,15,20,25,30,35,40,-10,-15,-20,-25,-30,-35,-40,-45,55]
-            },
-            shadow:0,
-            spinner:"off",
-            autoHeight:"off",
-            fullScreenAutoWidth:"off",
-            fullScreenAlignForce:"off",
-            disableProgressBar:"on",
-            hideThumbsOnMobile:"off",
-            hideSliderAtLimit:0,
-            hideCaptionAtLimit:0,
-            hideAllCaptionAtLilmit:0,
-            debugMode:false,
-            fallbacks:{ simplifyAll:"off", disableFocusListener:false }
+    <!-- Required JS for the Parallax Hero -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="include/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+    <script src="include/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+    <script src="include/rs-plugin/js/extensions/revolution.extension.video.min.js"></script>
+    <script src="include/rs-plugin/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script src="include/rs-plugin/js/extensions/revolution.extension.actions.min.js"></script>
+    <script src="include/rs-plugin/js/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script src="include/rs-plugin/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script src="include/rs-plugin/js/extensions/revolution.extension.parallax.min.js"></script>
+
+    <script>
+        jQuery(function ($) {
+            if (!$.fn.revolution) { console.error('Revolution Slider plugin not loaded.'); return; }
+            $("#rev_slider_6_1").show().revolution({
+                sliderType: "hero",
+                sliderLayout: "fullscreen",
+                dottedOverlay: "none",
+                delay: 9000,
+                navigation: {},
+                responsiveLevels: [1240, 1024, 778, 480],
+                visibilityLevels: [1240, 1024, 778, 480],
+                gridwidth: [1240, 1024, 778, 480],
+                gridheight: [868, 768, 960, 720],
+                lazyType: "none",
+                parallax: {
+                    type: "scroll",
+                    origo: "slidercenter",
+                    speed: 400,
+                    levels: [10, 15, 20, 25, 30, 35, 40, -10, -15, -20, -25, -30, -35, -40, -45, 55]
+                },
+                shadow: 0,
+                spinner: "off",
+                autoHeight: "off",
+                fullScreenAutoWidth: "off",
+                fullScreenAlignForce: "off",
+                disableProgressBar: "on",
+                hideThumbsOnMobile: "off",
+                hideSliderAtLimit: 0,
+                hideCaptionAtLimit: 0,
+                hideAllCaptionAtLilmit: 0,
+                debugMode: false,
+                fallbacks: { simplifyAll: "off", disableFocusListener: false }
+            });
         });
-    });
-</script>
+    </script>
 
-<!-- Your existing JS -->
-<script src="js/functions.js"></script>
-
-<script>
-    document.querySelectorAll('[data-pricing-plan]').forEach(function(plan){
-        plan.onclick = function(e) {
-            e.preventDefault();
-            document.getElementById('get-started-form-package').value = plan.getAttribute('data-pricing-plan');
-            document.getElementById('modal-get-started-package').innerHTML = plan.getAttribute('data-pricing-plan');
-        };
-    });
-</script>
+    <!-- Your existing JS (cleaned: removed unused modal-related code) -->
+    <script src="js/functions.js"></script>
 
 </body>
+
 </html>
