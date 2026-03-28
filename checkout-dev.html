@@ -1,1 +1,262 @@
-<!DOCTYPE html><html dir="ltr" lang="en-NZ"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Simple Office Tools | Checkout (DEV)</title><meta name="robots" content="noindex,nofollow"><link rel="canonical" href="https://simpleofficetools.co.nz/checkout-dev.html"><script src="https://cdn.paddle.com/paddle/v2/paddle.js"></script><script>Paddle.Environment.set("sandbox");let redirected=!1;const params=new URLSearchParams(window.location.search),mode=params.get("mode")||"web",quantityParam=Number.parseInt(params.get("qty")||"",10),quantity=Number.isFinite(quantityParam)&&quantityParam>0?quantityParam:1,unitPriceParam=Number.parseFloat(params.get("unit_price")||""),unitPrice=Number.isFinite(unitPriceParam)&&unitPriceParam>0?unitPriceParam:150,orderValue=Number((unitPrice*quantity).toFixed(2));function redirectCompleted(e){window.location.replace("purchase-completed.html?txn="+encodeURIComponent(e)+"&qty="+encodeURIComponent(String(quantity))+"&value="+encodeURIComponent(String(orderValue))+"&mode="+encodeURIComponent(mode))}function redirectClosed(){"app"===mode?window.location.replace("simpleofficetools://paddle/closed"):window.location.replace("index.html")}Paddle.Initialize({token:"test_596843cd1c398f03e412a6dcbab",eventCallback:function(e){if(!e||!e.name)return;const t=e.data&&(e.data.transaction_id||e.data.id)||"";if("checkout.completed"!==e.name||redirected)return"checkout.closed"!==e.name||redirected?void 0:(redirected=!0,void redirectClosed());redirected=!0,redirectCompleted(t);try{Paddle.Checkout.close()}catch(e){}}});const itemsList=[{priceId:"pri_01k3wkc5s0v6jeb4vdzfp0bhy7",quantity:quantity}];function openCheckout(e){Paddle.Checkout.open({items:e})}document.addEventListener("DOMContentLoaded",function(){openCheckout(itemsList)})</script></head><body></body></html>
+<!DOCTYPE html>
+<html dir="ltr" lang="en-NZ">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Simple Office Tools | Checkout (DEV)</title>
+    <meta name="robots" content="noindex,nofollow">
+    <link rel="canonical" href="https://simpleofficetools.co.nz/checkout-dev.html">
+    <script src="https://cdn.paddle.com/paddle/v2/paddle.js"></script>
+    <style>
+        :root {
+            color-scheme: light;
+            font-family: Poppins, Arial, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+            background: linear-gradient(180deg, #f7f9fc 0%, #eef3f9 100%);
+            color: #1e293b;
+        }
+
+        .checkout-status {
+            width: min(40rem, calc(100vw - 2rem));
+            padding: 2rem;
+            border-radius: 1.5rem;
+            background: #ffffff;
+            box-shadow: 0 20px 45px rgba(15, 23, 42, 0.1);
+            border: 1px solid rgba(148, 163, 184, 0.25);
+        }
+
+        .checkout-status h1 {
+            margin: 0 0 0.75rem;
+            font-size: clamp(1.8rem, 2vw, 2.2rem);
+        }
+
+        .checkout-status p {
+            margin: 0.75rem 0 0;
+            line-height: 1.6;
+            color: #475569;
+        }
+
+        .checkout-status a {
+            color: #2563eb;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .checkout-status a:hover,
+        .checkout-status a:focus-visible {
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        Paddle.Environment.set('sandbox');
+
+        let redirected = false;
+        const params = new URLSearchParams(window.location.search || '');
+        const mode = params.get('mode') || 'web';
+        const sku = (params.get('sku') || 'licence-annual').toLowerCase();
+        const requestedQuantity = Number.parseInt(params.get('qty') || '', 10);
+        const companyId = params.get('companyId') || '';
+        const companyName = params.get('companyName') || '';
+        const deviceId = params.get('deviceId') || '';
+
+        const PRODUCT_CATALOG = {
+            'licence-annual': {
+                kind: 'licence',
+                name: 'Simple Office Tools Annual Licence',
+                priceId: 'pri_01k3wkc5s0v6jeb4vdzfp0bhy7',
+                unitPrice: 150,
+                currency: 'NZD',
+                defaultQuantity: 1,
+                returnHref: 'pricing.html'
+            },
+            'tokens-10': {
+                kind: 'tokens',
+                name: '10 Signing Tokens',
+                priceId: 'pri_01kme695m9qwc2b7phh1htn8se',
+                unitPrice: 25,
+                currency: 'NZD',
+                defaultQuantity: 1,
+                tokenQuantity: 10,
+                returnHref: 'pricing.html#signing-tokens'
+            },
+            'tokens-25': {
+                kind: 'tokens',
+                name: '25 Signing Tokens',
+                priceId: 'pri_01kme6avn1qx6nwm60mnyaag3v',
+                unitPrice: 60,
+                currency: 'NZD',
+                defaultQuantity: 1,
+                tokenQuantity: 25,
+                returnHref: 'pricing.html#signing-tokens'
+            },
+            'tokens-50': {
+                kind: 'tokens',
+                name: '50 Signing Tokens',
+                priceId: '',
+                unitPrice: 110,
+                currency: 'NZD',
+                defaultQuantity: 1,
+                tokenQuantity: 50,
+                returnHref: 'pricing.html#signing-tokens'
+            },
+            'tokens-100': {
+                kind: 'tokens',
+                name: '100 Signing Tokens',
+                priceId: '',
+                unitPrice: 200,
+                currency: 'NZD',
+                defaultQuantity: 1,
+                tokenQuantity: 100,
+                returnHref: 'pricing.html#signing-tokens'
+            },
+            'tokens-250': {
+                kind: 'tokens',
+                name: '250 Signing Tokens',
+                priceId: '',
+                unitPrice: 450,
+                currency: 'NZD',
+                defaultQuantity: 1,
+                tokenQuantity: 250,
+                returnHref: 'pricing.html#signing-tokens'
+            },
+            'tokens-500': {
+                kind: 'tokens',
+                name: '500 Signing Tokens',
+                priceId: '',
+                unitPrice: 800,
+                currency: 'NZD',
+                defaultQuantity: 1,
+                tokenQuantity: 500,
+                returnHref: 'pricing.html#signing-tokens'
+            }
+        };
+
+        const product = PRODUCT_CATALOG[sku];
+        const checkoutQuantity = Number.isFinite(requestedQuantity) && requestedQuantity > 0
+            ? requestedQuantity
+            : (product ? product.defaultQuantity : 1);
+        const orderValue = product ? Number((product.unitPrice * checkoutQuantity).toFixed(2)) : 0;
+        const totalTokenQuantity = product && product.kind === 'tokens'
+            ? product.tokenQuantity * checkoutQuantity
+            : 0;
+
+        function setStatus(title, message, returnHref) {
+            const titleElement = document.getElementById('checkout-title');
+            const messageElement = document.getElementById('checkout-message');
+            const returnLink = document.getElementById('checkout-return-link');
+            if (titleElement) titleElement.textContent = title;
+            if (messageElement) messageElement.textContent = message;
+            if (returnLink && returnHref) returnLink.href = returnHref;
+        }
+
+        function buildCompletionQuery(txn) {
+            const completionParams = new URLSearchParams();
+            if (txn) completionParams.set('txn', txn);
+            completionParams.set('sku', sku);
+            completionParams.set('kind', product.kind);
+            completionParams.set('qty', String(checkoutQuantity));
+            completionParams.set('value', String(orderValue));
+            completionParams.set('mode', mode);
+            if (product.kind === 'tokens') {
+                completionParams.set('tokenQty', String(totalTokenQuantity));
+                if (companyId) completionParams.set('companyId', companyId);
+                if (companyName) completionParams.set('companyName', companyName);
+                if (deviceId) completionParams.set('deviceId', deviceId);
+            }
+            return completionParams.toString();
+        }
+
+        function redirectCompleted(txn) {
+            window.location.replace('purchase-completed.html?' + buildCompletionQuery(txn));
+        }
+
+        function redirectClosed() {
+            if (mode === 'app') {
+                const closedParams = new URLSearchParams();
+                if (product && product.kind === 'tokens') {
+                    closedParams.set('kind', 'tokens');
+                }
+                const suffix = closedParams.toString();
+                window.location.replace('simpleofficetools://paddle/closed' + (suffix ? '?' + suffix : ''));
+            } else {
+                window.location.replace(product ? product.returnHref : 'pricing.html');
+            }
+        }
+
+        function buildCustomData() {
+            const customData = {
+                purchaseKind: product.kind,
+                sku: sku,
+                source: mode === 'app' ? 'app' : 'web'
+            };
+
+            if (product.kind === 'tokens') {
+                customData.tokenQuantity = totalTokenQuantity;
+                if (companyId) customData.companyId = companyId;
+                if (companyName) customData.companyName = companyName;
+                if (deviceId) customData.deviceId = deviceId;
+            }
+
+            return customData;
+        }
+
+        function showUnavailable(message) {
+            setStatus('Checkout unavailable', message, product ? product.returnHref : 'pricing.html');
+        }
+
+        Paddle.Initialize({
+            token: 'test_596843cd1c398f03e412a6dcbab',
+            eventCallback: function (evt) {
+                if (!evt || !evt.name || !product) return;
+
+                const txn = (evt.data && (evt.data.transaction_id || evt.data.id)) || '';
+
+                if (evt.name === 'checkout.completed' && !redirected) {
+                    redirected = true;
+                    redirectCompleted(txn);
+                    try { Paddle.Checkout.close(); } catch (_) {}
+                    return;
+                }
+
+                if (evt.name === 'checkout.closed' && !redirected) {
+                    redirected = true;
+                    redirectClosed();
+                }
+            }
+        });
+
+        function openCheckout() {
+            if (!product) {
+                showUnavailable('This checkout item was not recognised. Please return to pricing and choose a valid product.');
+                return;
+            }
+
+            if (!product.priceId) {
+                showUnavailable('This token bundle is not configured in Paddle sandbox yet. Add the matching Paddle sandbox price ID in checkout-dev.html, then try again.');
+                return;
+            }
+
+            setStatus('Preparing secure checkout...', 'Launching Paddle checkout for ' + product.name + '.', product.returnHref);
+            Paddle.Checkout.open({
+                items: [{ priceId: product.priceId, quantity: checkoutQuantity }],
+                customData: buildCustomData()
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', openCheckout);
+    </script>
+</head>
+<body>
+    <main class="checkout-status" aria-live="polite">
+        <h1 id="checkout-title">Preparing secure checkout...</h1>
+        <p id="checkout-message">Launching Paddle checkout.</p>
+        <p><a id="checkout-return-link" href="pricing.html">Back to pricing</a></p>
+    </main>
+</body>
+</html>
