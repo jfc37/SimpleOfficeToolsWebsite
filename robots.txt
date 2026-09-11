@@ -3,5 +3,7 @@ Allow: /
 Disallow: /checkout.html
 Disallow: /checkout-dev.html
 Disallow: /purchase-completed.html
+Disallow: /purchase-completed-dev.html
+Disallow: /pricing-dev.html
 
 Sitemap: https://simpleofficetools.co.nz/sitemap.xml
