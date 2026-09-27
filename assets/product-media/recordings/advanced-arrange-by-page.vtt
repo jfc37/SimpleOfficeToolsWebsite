@@ -1,0 +1,13 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:02.000
+In All pages, open Advanced move.
+
+00:00:02.000 --> 00:00:05.200
+Enter the page range to move. The dialog warns when the destination is inside that selection.
+
+00:00:05.200 --> 00:00:08.200
+Choose After, enter an included destination page outside the selection, then choose Move pages.
+
+00:00:08.200 --> 00:00:10.770
+The selected page range moves together to its new position.
