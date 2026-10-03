@@ -1,0 +1,37 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:02.700
+In Stamps, choose Create stamp.
+
+00:00:02.700 --> 00:00:06.300
+Name the stamp and set the stamp boundary size.
+
+00:00:06.300 --> 00:00:10.300
+Choose Image to add a graphic element to the stamp.
+
+00:00:10.300 --> 00:00:16.000
+Select the approval artwork in the file picker and open it.
+
+00:00:16.000 --> 00:00:19.000
+Position the image inside the stamp boundary.
+
+00:00:19.000 --> 00:00:24.500
+Add dynamic text and choose the identity field it should display.
+
+00:00:24.500 --> 00:00:31.500
+Enter prefix text and adjust the dynamic field's size and position.
+
+00:00:31.500 --> 00:00:38.500
+Add more stamp text and arrange the elements inside the boundary.
+
+00:00:38.500 --> 00:00:42.500
+Adjust the text styling, then choose Save stamp.
+
+00:00:42.500 --> 00:00:45.000
+The saved stamp appears in the Stamps library.
+
+00:00:45.000 --> 00:00:48.000
+Select the stamp and click the current PDF page to place it.
+
+00:00:48.000 --> 00:00:51.000
+The completed stamp is frozen on the PDF at the chosen position.
